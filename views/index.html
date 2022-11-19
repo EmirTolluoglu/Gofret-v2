@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../public/css/fa.min.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+
+    <title>ffafeaf</title>
+</head>
+
+<body class="bg-light">
+
+    <header class="py-2 ">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between ms-4 me-2 ">
+                <a href="/"><img src="../public/img/gofret_logo.webp" alt="logo" width="80"></a>
+                <div class="d-flex align-items-center my-auto ms-3">
+                    <div class="form-group has-search rounded-5 me-2 my-auto">
+                        <!-- <i class="fa fa-search form-control-feedback fa-lg"></i> -->
+                        <img class="form-control-feedback mt-1 ms-2" src="../public/img/icons/magnetic-icon.png" alt="ico">
+                        <input type="text" class="form-control rounded-5 fs-6 p-0" placeholder="">
+                    </div>
+                    <a class="my-auto" href="/"><img src="../public/img/icons/chat-icon.png" alt="chat" width="26"></a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+
+
+    <main id="explore" class="ogret">
+        <section id="shape-banner">
+            <div class="position-relative w-100" style="height: 130px;">
+                <div class="rounded-top rounded-4 shape-first position-absolute w-100 d-flex justify-content-between align-items-center flex-column" style="height: 90px; top: 0; z-index: 5;">
+                    <h2 class="w-100 text-center text-primary my-auto">Yeni Hobiler<br>Keşfet!</h3>
+                </div>
+                <div class="rounded-top rounded-4 shape-second position-absolute w-100" style="height: 105px; top: 0; z-index: 4;"></div>
+                <div class="rounded-top rounded-4 bg-white position-absolute w-100" style="height: 130px; top: 0; z-index: 2;"></div>
+            </div>
+        </section>
+
+        <div id="main-wrapper" class="container mt-2">
+            <section id="selection-card">
+                <div class="d-flex justify-content-center align-items-center px-3">
+                    <div class="btn btn-ogren rounded-4-5 px-4 fw-bold fs-16 mx-2">Öğren</div>
+                    <div class="btn btn-ogret rounded-4-5 px-4 fw-bold fs-16 mx-2">Öğret</div>
+                    <a href="#" style="margin-left: 5px;"><img src="../public/img/icons/up-down-icon.png " alt="arrange" width="28"></a>
+                </div>
+            </section>
+
+            <section id="card-order" class="mt-3">
+                <!-- grid -->
+                <div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-3">
+                    <div class="col">
+                        <div class="card rounded-3 bg-white border-0" style="box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);">
+                            <div class="card-top pt-5 rounded-3 bg-light-secondary p-3">
+                                <p class="fs-13 mt-auto text-primary">Spor yapıyorum, <img src="../public/img/uploads/profile/burak.jpg" alt="pp" class="rounded-circle float-end">pilav yapmayı öğretebilirim.</p>
+                            </div>
+                            <div class="card-content p-1 d-flex justify-content-between">
+                                <div class="content ps-2">
+                                    <div class="category d-flex align-items-center mb-1">
+                                        <h4 class="fw-bold fs-18 text-dark">Pilav</h4>
+                                        <i class="fa fa-circle mb-2 text-primary text-medium mx-1 mt-2" style="font-size: 4px;"></i>
+                                        <h5 class="fs-11 text-medium2">Yemek</h5>
+                                    </div>
+                                    <p class="text-gray fs-11 fw-medium">Burak Gümrah</p>
+                                </div>
+                                <div class="other d-flex flex-column justify-content-center pe-1 ms-3 w-100">
+                                    <div class="d-flex align-items-center justify-content-center rounded-pill me-2 bg-tertiary py-1 w-100 text-white fs-10">lvl. 10</div>
+                                    <div class="fee d-flex justify-content-center">
+                                        <img src="../public/img/icons/dollar-circle.svg" alt="fee">
+                                        <p class="fs-18 fw-bold text-dark">10</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+        </div>
+    </main>
+
+
+    <nav class="fixed-bottom ">
+        <div class="container ">
+            <div class="d-flex justify-content-around align-items-center py-3 ">
+                <a href="/ "><img class="opacity-50 " src="../public/img/icons/home-icon.png " alt="home " width="26 "></a>
+                <a href="/ "><img class=" " src="../public/img/icons/heart-icon.png " alt="heart " width="26 "></a>
+                <a href="/ "><img class="opacity-50 " src="../public/img/icons/trade-icon.png " alt="trade " width="26 "></a>
+                <a href="/ "><img class="opacity-50 " src="../public/img/icons/user-icon.png " alt="user " width="26 "></a>
+                <a href="/ "><img class="opacity-50 " src="../public/img/icons/bell-icon.png " alt="bell " width="26 "></a>
+            </div>
+        </div>
+    </nav>
+    <script src="../public/js/bootstrap.bundle.min.js "></script>
+    <script src="../public/js/jquery.min.js "></script>
+    <script src="../public/js/fa.min.js "></script>
+    <script>
+        $(document).ready(function() {
+            $('.dropdown-toggle').dropdown()
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+.fs-7 {
+  font-size: 0.438rem;
+}
+
+.fs-9 {
+  font-size: 0.563rem;
+}
+
+.fs-10 {
+  font-size: 0.625rem;
+}
+
+.fs-11 {
+  font-size: 0.688rem;
+}
+
+.fs-12 {
+  font-size: 0.75rem;
+}
+
+.fs-13 {
+  font-size: 0.813rem;
+}
+
+.fs-14 {
+  font-size: 0.875rem;
+}
+
+.fs-15 {
+  font-size: 0.938rem;
+}
+
+.fs-16 {
+  font-size: 1rem;
+}
+
+.fs-17 {
+  font-size: 1.063rem;
+}
+
+.fs-18 {
+  font-size: 1.125rem;
+}
+
+.fs-19 {
+  font-size: 1.188rem;
+}
+
+.fs-20 {
+  font-size: 1.25rem;
+}
+
+.fs-21 {
+  font-size: 1.313rem;
+}
+
+.fs-22 {
+  font-size: 1.375rem;
+}
+
+.fs-23 {
+  font-size: 1.438rem;
+}
+
+.fs-24 {
+  font-size: 1.5rem;
+}
+
+.fs-25 {
+  font-size: 1.563rem;
+}
+
+.text-primary {
+  color: #501A7A !important;
+}
+
+.text-secondary {
+  color: #ABDDD1 !important;
+}
+
+.text-tertiary {
+  color: #CD8BBF !important;
+}
+
+.text-light {
+  color: #FFFFFF !important;
+}
+
+.text-medium {
+  color: #733A67 !important;
+}
+
+.text-gray {
+  color: #7D7D7D !important;
+}
+
+.text-dark {
+  color: #3F414E !important;
+}
+
+.text-medium2 {
+  color: #963B8E !important;
+}
+
+.fw-medium {
+  font-weight: 500 !important;
+}
+
+.fw-semiBold {
+  font-weight: 600 !important;
+}
+
+.bg-primary {
+  background-color: #501A7A !important;
+}
+
+.bg-secondary {
+  background-color: #ABDDD1 !important;
+}
+
+.bg-tertiary {
+  background-color: #CD8BBF !important;
+}
+
+.bg-light {
+  background-color: #F0F0F5 !important;
+}
+
+.bg-light-secondary {
+  background-color: #B9FFEA !important;
+}
+
+.bg-light-tertiary {
+  background-color: #FFC1F2 !important;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #F0F0F5 !important;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.btn-light-secondary, main#explore.ogren .btn-ogren {
+  background-color: #B9FFEA;
+  color: #29D3A0;
+  border: 2px solid #29D3A0;
+}
+
+.btn-primary {
+  background-color: #501A7A;
+  color: #FFFFFF;
+  border: 0;
+}
+
+.btn-primary-transparent, main#explore.ogret .btn-ogren, main#explore.ogren .btn-ogret {
+  border: 2px solid #501A7A;
+  color: #501A7A;
+}
+
+.btn-light-tertiary, main#explore.ogret .btn-ogret {
+  background-color: #FFC1F2;
+  color: #BA62A7;
+  border: 2px solid #BA62A7;
+}
+
+.rounded-4-5 {
+  border-radius: 1.35rem !important;
+}
+
+header {
+  background-color: #F0F0F5 !important;
+}
+header .has-search .form-control {
+  padding-left: 2.375rem;
+  background-color: #E4E4E4;
+}
+header .has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  text-align: center;
+  pointer-events: none;
+  color: #733A67 !important;
+}
+
+nav {
+  background-color: #F0F0F5 !important;
+}
+
+main#explore.ogren {
+  background-color: #F0F0F5 !important;
+}
+main#explore.ogren #shape-banner .shape-first {
+  background-color: #B9FFEA !important;
+}
+main#explore.ogren #shape-banner .shape-second {
+  background-color: #FFC1F2 !important;
+}
+main#explore.ogret {
+  background-color: #DCB6D4 !important;
+}
+main#explore.ogret #shape-banner .shape-first {
+  background-color: #FFC1F2 !important;
+}
+main#explore.ogret #shape-banner .shape-second {
+  background-color: #B9FFEA !important;
+}
+
+/*# sourceMappingURL=style.css.map */
