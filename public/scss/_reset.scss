@@ -4,6 +4,7 @@
 
 body {
     overflow-x: hidden;
+    transition: all .2s ease-in;
     background-color: $background-color-light !important;
 }
 

@@ -83,7 +83,7 @@
 }
 
 .text-light {
-    color: $font-color-light !important;
+    color: $white !important;
 }
 
 .text-medium {
@@ -108,4 +108,8 @@
 
 .fw-semiBold {
     font-weight: $font-weight-semiBold !important;
+}
+
+.text-dark-pink {
+    color: $dark-pink-color;
 }

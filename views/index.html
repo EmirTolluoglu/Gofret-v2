@@ -36,7 +36,7 @@
 
 
 
-    <main id="explore" class="ogret">
+    <main id="explore" class="ogren">
         <section id="shape-banner">
             <div class="position-relative w-100" style="height: 130px;">
                 <div class="rounded-top rounded-4 shape-first position-absolute w-100 d-flex justify-content-between align-items-center flex-column" style="height: 90px; top: 0; z-index: 5;">
@@ -50,33 +50,261 @@
         <div id="main-wrapper" class="container mt-2">
             <section id="selection-card">
                 <div class="d-flex justify-content-center align-items-center px-3">
-                    <div class="btn btn-ogren rounded-4-5 px-4 fw-bold fs-16 mx-2">Öğren</div>
-                    <div class="btn btn-ogret rounded-4-5 px-4 fw-bold fs-16 mx-2">Öğret</div>
+                    <div id="ogren" class="btn btn-ogren rounded-4-5 px-4 fw-bold fs-16 mx-2">Öğren</div>
+                    <div id="ogret" class="btn btn-ogret rounded-4-5 px-4 fw-bold fs-16 mx-2">Öğret</div>
                     <a href="#" style="margin-left: 5px;"><img src="../public/img/icons/up-down-icon.png " alt="arrange" width="28"></a>
                 </div>
             </section>
 
             <section id="card-order" class="mt-3">
-                <!-- grid -->
+
                 <div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-3">
                     <div class="col">
                         <div class="card rounded-3 bg-white border-0" style="box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);">
-                            <div class="card-top pt-5 rounded-3 bg-light-secondary p-3">
+                            <div class="card-top pt-5 rounded-3 p-3">
                                 <p class="fs-13 mt-auto text-primary">Spor yapıyorum, <img src="../public/img/uploads/profile/burak.jpg" alt="pp" class="rounded-circle float-end">pilav yapmayı öğretebilirim.</p>
                             </div>
-                            <div class="card-content p-1 d-flex justify-content-between">
+                            <div class="card-body p-1 d-flex justify-content-between">
                                 <div class="content ps-2">
                                     <div class="category d-flex align-items-center mb-1">
-                                        <h4 class="fw-bold fs-18 text-dark">Pilav</h4>
-                                        <i class="fa fa-circle mb-2 text-primary text-medium mx-1 mt-2" style="font-size: 4px;"></i>
-                                        <h5 class="fs-11 text-medium2">Yemek</h5>
+                                        <h4 class="fw-bold fs-18">Pilav</h4>
+                                        <i class="fa fa-circle mb-2 mx-1 mt-2" style="font-size: 4px;"></i>
+                                        <h5 class="fs-11">Yemek</h5>
                                     </div>
-                                    <p class="text-gray fs-11 fw-medium">Burak Gümrah</p>
+                                    <p class="fs-11 fw-medium">Burak Gümrah</p>
                                 </div>
                                 <div class="other d-flex flex-column justify-content-center pe-1 ms-3 w-100">
-                                    <div class="d-flex align-items-center justify-content-center rounded-pill me-2 bg-tertiary py-1 w-100 text-white fs-10">lvl. 10</div>
-                                    <div class="fee d-flex justify-content-center">
-                                        <img src="../public/img/icons/dollar-circle.svg" alt="fee">
+                                    <div class="level d-flex align-items-center justify-content-center rounded-pill me-2 py-1 w-100 fs-10">lvl. 10</div>
+                                    <div class="price d-flex justify-content-center">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.6875 14.5932H12.2833C12.8792 14.5932 13.3742 14.0615 13.3742 13.4199C13.3742 12.6224 13.09 12.4665 12.6225 12.3015L11.6967 11.9807V14.5932H11.6875Z" fill="#292D32"/>
+                                            <path d="M10.9727 1.74171C5.91272 1.76005 1.81522 5.87588 1.83356 10.9359C1.85189 15.9959 5.96772 20.0934 11.0277 20.075C16.0877 20.0567 20.1852 15.9409 20.1669 10.8809C20.1486 5.82088 16.0327 1.73255 10.9727 1.74171ZM13.0719 11C13.7869 11.2475 14.7494 11.7792 14.7494 13.42C14.7494 14.8317 13.6402 15.9684 12.2836 15.9684H11.6877V16.5C11.6877 16.8759 11.3761 17.1875 11.0002 17.1875C10.6244 17.1875 10.3127 16.8759 10.3127 16.5V15.9684H9.98272C8.47939 15.9684 7.26022 14.7034 7.26022 13.145C7.26022 12.7692 7.57189 12.4575 7.94772 12.4575C8.32356 12.4575 8.63522 12.7692 8.63522 13.145C8.63522 13.9425 9.24022 14.5934 9.98272 14.5934H10.3127V11.495L8.92856 11C8.21356 10.7525 7.25106 10.2209 7.25106 8.58005C7.25106 7.16838 8.36022 6.03171 9.71689 6.03171H10.3127V5.50005C10.3127 5.12421 10.6244 4.81255 11.0002 4.81255C11.3761 4.81255 11.6877 5.12421 11.6877 5.50005V6.03171H12.0177C13.5211 6.03171 14.7402 7.29671 14.7402 8.85505C14.7402 9.23088 14.4286 9.54255 14.0527 9.54255C13.6769 9.54255 13.3652 9.23088 13.3652 8.85505C13.3652 8.05755 12.7602 7.40671 12.0177 7.40671H11.6877V10.505L13.0719 11Z" fill="#292D32"/>
+                                            <path d="M8.63477 8.58924C8.63477 9.38674 8.91893 9.54257 9.38643 9.70757L10.3123 10.0284V7.40674H9.71643C9.1206 7.40674 8.63477 7.9384 8.63477 8.58924Z" fill="#292D32"/>
+                                        </svg>
+                                        <p class="fs-18 fw-bold text-dark">10</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card rounded-3 bg-white border-0" style="box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);">
+                            <div class="card-top pt-5 rounded-3 p-3">
+                                <p class="fs-13 mt-auto text-primary">Spor yapıyorum, <img src="../public/img/uploads/profile/burak.jpg" alt="pp" class="rounded-circle float-end">pilav yapmayı öğretebilirim.</p>
+                            </div>
+                            <div class="card-body p-1 d-flex justify-content-between">
+                                <div class="content ps-2">
+                                    <div class="category d-flex align-items-center mb-1">
+                                        <h4 class="fw-bold fs-18">Pilav</h4>
+                                        <i class="fa fa-circle mb-2 mx-1 mt-2" style="font-size: 4px;"></i>
+                                        <h5 class="fs-11">Yemek</h5>
+                                    </div>
+                                    <p class="fs-11 fw-medium">Burak Gümrah</p>
+                                </div>
+                                <div class="other d-flex flex-column justify-content-center pe-1 ms-3 w-100">
+                                    <div class="level d-flex align-items-center justify-content-center rounded-pill me-2 py-1 w-100 fs-10">lvl. 10</div>
+                                    <div class="price d-flex justify-content-center">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.6875 14.5932H12.2833C12.8792 14.5932 13.3742 14.0615 13.3742 13.4199C13.3742 12.6224 13.09 12.4665 12.6225 12.3015L11.6967 11.9807V14.5932H11.6875Z" fill="#292D32"/>
+                                            <path d="M10.9727 1.74171C5.91272 1.76005 1.81522 5.87588 1.83356 10.9359C1.85189 15.9959 5.96772 20.0934 11.0277 20.075C16.0877 20.0567 20.1852 15.9409 20.1669 10.8809C20.1486 5.82088 16.0327 1.73255 10.9727 1.74171ZM13.0719 11C13.7869 11.2475 14.7494 11.7792 14.7494 13.42C14.7494 14.8317 13.6402 15.9684 12.2836 15.9684H11.6877V16.5C11.6877 16.8759 11.3761 17.1875 11.0002 17.1875C10.6244 17.1875 10.3127 16.8759 10.3127 16.5V15.9684H9.98272C8.47939 15.9684 7.26022 14.7034 7.26022 13.145C7.26022 12.7692 7.57189 12.4575 7.94772 12.4575C8.32356 12.4575 8.63522 12.7692 8.63522 13.145C8.63522 13.9425 9.24022 14.5934 9.98272 14.5934H10.3127V11.495L8.92856 11C8.21356 10.7525 7.25106 10.2209 7.25106 8.58005C7.25106 7.16838 8.36022 6.03171 9.71689 6.03171H10.3127V5.50005C10.3127 5.12421 10.6244 4.81255 11.0002 4.81255C11.3761 4.81255 11.6877 5.12421 11.6877 5.50005V6.03171H12.0177C13.5211 6.03171 14.7402 7.29671 14.7402 8.85505C14.7402 9.23088 14.4286 9.54255 14.0527 9.54255C13.6769 9.54255 13.3652 9.23088 13.3652 8.85505C13.3652 8.05755 12.7602 7.40671 12.0177 7.40671H11.6877V10.505L13.0719 11Z" fill="#292D32"/>
+                                            <path d="M8.63477 8.58924C8.63477 9.38674 8.91893 9.54257 9.38643 9.70757L10.3123 10.0284V7.40674H9.71643C9.1206 7.40674 8.63477 7.9384 8.63477 8.58924Z" fill="#292D32"/>
+                                        </svg>
+                                        <p class="fs-18 fw-bold text-dark">10</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card rounded-3 bg-white border-0" style="box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);">
+                            <div class="card-top pt-5 rounded-3 p-3">
+                                <p class="fs-13 mt-auto text-primary">Spor yapıyorum, <img src="../public/img/uploads/profile/burak.jpg" alt="pp" class="rounded-circle float-end">pilav yapmayı öğretebilirim.</p>
+                            </div>
+                            <div class="card-body p-1 d-flex justify-content-between">
+                                <div class="content ps-2">
+                                    <div class="category d-flex align-items-center mb-1">
+                                        <h4 class="fw-bold fs-18">Pilav</h4>
+                                        <i class="fa fa-circle mb-2 mx-1 mt-2" style="font-size: 4px;"></i>
+                                        <h5 class="fs-11">Yemek</h5>
+                                    </div>
+                                    <p class="fs-11 fw-medium">Burak Gümrah</p>
+                                </div>
+                                <div class="other d-flex flex-column justify-content-center pe-1 ms-3 w-100">
+                                    <div class="level d-flex align-items-center justify-content-center rounded-pill me-2 py-1 w-100 fs-10">lvl. 10</div>
+                                    <div class="price d-flex justify-content-center">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.6875 14.5932H12.2833C12.8792 14.5932 13.3742 14.0615 13.3742 13.4199C13.3742 12.6224 13.09 12.4665 12.6225 12.3015L11.6967 11.9807V14.5932H11.6875Z" fill="#292D32"/>
+                                            <path d="M10.9727 1.74171C5.91272 1.76005 1.81522 5.87588 1.83356 10.9359C1.85189 15.9959 5.96772 20.0934 11.0277 20.075C16.0877 20.0567 20.1852 15.9409 20.1669 10.8809C20.1486 5.82088 16.0327 1.73255 10.9727 1.74171ZM13.0719 11C13.7869 11.2475 14.7494 11.7792 14.7494 13.42C14.7494 14.8317 13.6402 15.9684 12.2836 15.9684H11.6877V16.5C11.6877 16.8759 11.3761 17.1875 11.0002 17.1875C10.6244 17.1875 10.3127 16.8759 10.3127 16.5V15.9684H9.98272C8.47939 15.9684 7.26022 14.7034 7.26022 13.145C7.26022 12.7692 7.57189 12.4575 7.94772 12.4575C8.32356 12.4575 8.63522 12.7692 8.63522 13.145C8.63522 13.9425 9.24022 14.5934 9.98272 14.5934H10.3127V11.495L8.92856 11C8.21356 10.7525 7.25106 10.2209 7.25106 8.58005C7.25106 7.16838 8.36022 6.03171 9.71689 6.03171H10.3127V5.50005C10.3127 5.12421 10.6244 4.81255 11.0002 4.81255C11.3761 4.81255 11.6877 5.12421 11.6877 5.50005V6.03171H12.0177C13.5211 6.03171 14.7402 7.29671 14.7402 8.85505C14.7402 9.23088 14.4286 9.54255 14.0527 9.54255C13.6769 9.54255 13.3652 9.23088 13.3652 8.85505C13.3652 8.05755 12.7602 7.40671 12.0177 7.40671H11.6877V10.505L13.0719 11Z" fill="#292D32"/>
+                                            <path d="M8.63477 8.58924C8.63477 9.38674 8.91893 9.54257 9.38643 9.70757L10.3123 10.0284V7.40674H9.71643C9.1206 7.40674 8.63477 7.9384 8.63477 8.58924Z" fill="#292D32"/>
+                                        </svg>
+                                        <p class="fs-18 fw-bold text-dark">10</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card rounded-3 bg-white border-0" style="box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);">
+                            <div class="card-top pt-5 rounded-3 p-3">
+                                <p class="fs-13 mt-auto text-primary">Spor yapıyorum, <img src="../public/img/uploads/profile/burak.jpg" alt="pp" class="rounded-circle float-end">pilav yapmayı öğretebilirim.</p>
+                            </div>
+                            <div class="card-body p-1 d-flex justify-content-between">
+                                <div class="content ps-2">
+                                    <div class="category d-flex align-items-center mb-1">
+                                        <h4 class="fw-bold fs-18">Pilav</h4>
+                                        <i class="fa fa-circle mb-2 mx-1 mt-2" style="font-size: 4px;"></i>
+                                        <h5 class="fs-11">Yemek</h5>
+                                    </div>
+                                    <p class="fs-11 fw-medium">Burak Gümrah</p>
+                                </div>
+                                <div class="other d-flex flex-column justify-content-center pe-1 ms-3 w-100">
+                                    <div class="level d-flex align-items-center justify-content-center rounded-pill me-2 py-1 w-100 fs-10">lvl. 10</div>
+                                    <div class="price d-flex justify-content-center">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.6875 14.5932H12.2833C12.8792 14.5932 13.3742 14.0615 13.3742 13.4199C13.3742 12.6224 13.09 12.4665 12.6225 12.3015L11.6967 11.9807V14.5932H11.6875Z" fill="#292D32"/>
+                                            <path d="M10.9727 1.74171C5.91272 1.76005 1.81522 5.87588 1.83356 10.9359C1.85189 15.9959 5.96772 20.0934 11.0277 20.075C16.0877 20.0567 20.1852 15.9409 20.1669 10.8809C20.1486 5.82088 16.0327 1.73255 10.9727 1.74171ZM13.0719 11C13.7869 11.2475 14.7494 11.7792 14.7494 13.42C14.7494 14.8317 13.6402 15.9684 12.2836 15.9684H11.6877V16.5C11.6877 16.8759 11.3761 17.1875 11.0002 17.1875C10.6244 17.1875 10.3127 16.8759 10.3127 16.5V15.9684H9.98272C8.47939 15.9684 7.26022 14.7034 7.26022 13.145C7.26022 12.7692 7.57189 12.4575 7.94772 12.4575C8.32356 12.4575 8.63522 12.7692 8.63522 13.145C8.63522 13.9425 9.24022 14.5934 9.98272 14.5934H10.3127V11.495L8.92856 11C8.21356 10.7525 7.25106 10.2209 7.25106 8.58005C7.25106 7.16838 8.36022 6.03171 9.71689 6.03171H10.3127V5.50005C10.3127 5.12421 10.6244 4.81255 11.0002 4.81255C11.3761 4.81255 11.6877 5.12421 11.6877 5.50005V6.03171H12.0177C13.5211 6.03171 14.7402 7.29671 14.7402 8.85505C14.7402 9.23088 14.4286 9.54255 14.0527 9.54255C13.6769 9.54255 13.3652 9.23088 13.3652 8.85505C13.3652 8.05755 12.7602 7.40671 12.0177 7.40671H11.6877V10.505L13.0719 11Z" fill="#292D32"/>
+                                            <path d="M8.63477 8.58924C8.63477 9.38674 8.91893 9.54257 9.38643 9.70757L10.3123 10.0284V7.40674H9.71643C9.1206 7.40674 8.63477 7.9384 8.63477 8.58924Z" fill="#292D32"/>
+                                        </svg>
+                                        <p class="fs-18 fw-bold text-dark">10</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card rounded-3 bg-white border-0" style="box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);">
+                            <div class="card-top pt-5 rounded-3 p-3">
+                                <p class="fs-13 mt-auto text-primary">Spor yapıyorum, <img src="../public/img/uploads/profile/burak.jpg" alt="pp" class="rounded-circle float-end">pilav yapmayı öğretebilirim.</p>
+                            </div>
+                            <div class="card-body p-1 d-flex justify-content-between">
+                                <div class="content ps-2">
+                                    <div class="category d-flex align-items-center mb-1">
+                                        <h4 class="fw-bold fs-18">Pilav</h4>
+                                        <i class="fa fa-circle mb-2 mx-1 mt-2" style="font-size: 4px;"></i>
+                                        <h5 class="fs-11">Yemek</h5>
+                                    </div>
+                                    <p class="fs-11 fw-medium">Burak Gümrah</p>
+                                </div>
+                                <div class="other d-flex flex-column justify-content-center pe-1 ms-3 w-100">
+                                    <div class="level d-flex align-items-center justify-content-center rounded-pill me-2 py-1 w-100 fs-10">lvl. 10</div>
+                                    <div class="price d-flex justify-content-center">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.6875 14.5932H12.2833C12.8792 14.5932 13.3742 14.0615 13.3742 13.4199C13.3742 12.6224 13.09 12.4665 12.6225 12.3015L11.6967 11.9807V14.5932H11.6875Z" fill="#292D32"/>
+                                            <path d="M10.9727 1.74171C5.91272 1.76005 1.81522 5.87588 1.83356 10.9359C1.85189 15.9959 5.96772 20.0934 11.0277 20.075C16.0877 20.0567 20.1852 15.9409 20.1669 10.8809C20.1486 5.82088 16.0327 1.73255 10.9727 1.74171ZM13.0719 11C13.7869 11.2475 14.7494 11.7792 14.7494 13.42C14.7494 14.8317 13.6402 15.9684 12.2836 15.9684H11.6877V16.5C11.6877 16.8759 11.3761 17.1875 11.0002 17.1875C10.6244 17.1875 10.3127 16.8759 10.3127 16.5V15.9684H9.98272C8.47939 15.9684 7.26022 14.7034 7.26022 13.145C7.26022 12.7692 7.57189 12.4575 7.94772 12.4575C8.32356 12.4575 8.63522 12.7692 8.63522 13.145C8.63522 13.9425 9.24022 14.5934 9.98272 14.5934H10.3127V11.495L8.92856 11C8.21356 10.7525 7.25106 10.2209 7.25106 8.58005C7.25106 7.16838 8.36022 6.03171 9.71689 6.03171H10.3127V5.50005C10.3127 5.12421 10.6244 4.81255 11.0002 4.81255C11.3761 4.81255 11.6877 5.12421 11.6877 5.50005V6.03171H12.0177C13.5211 6.03171 14.7402 7.29671 14.7402 8.85505C14.7402 9.23088 14.4286 9.54255 14.0527 9.54255C13.6769 9.54255 13.3652 9.23088 13.3652 8.85505C13.3652 8.05755 12.7602 7.40671 12.0177 7.40671H11.6877V10.505L13.0719 11Z" fill="#292D32"/>
+                                            <path d="M8.63477 8.58924C8.63477 9.38674 8.91893 9.54257 9.38643 9.70757L10.3123 10.0284V7.40674H9.71643C9.1206 7.40674 8.63477 7.9384 8.63477 8.58924Z" fill="#292D32"/>
+                                        </svg>
+                                        <p class="fs-18 fw-bold text-dark">10</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card rounded-3 bg-white border-0" style="box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);">
+                            <div class="card-top pt-5 rounded-3 p-3">
+                                <p class="fs-13 mt-auto text-primary">Spor yapıyorum, <img src="../public/img/uploads/profile/burak.jpg" alt="pp" class="rounded-circle float-end">pilav yapmayı öğretebilirim.</p>
+                            </div>
+                            <div class="card-body p-1 d-flex justify-content-between">
+                                <div class="content ps-2">
+                                    <div class="category d-flex align-items-center mb-1">
+                                        <h4 class="fw-bold fs-18">Pilav</h4>
+                                        <i class="fa fa-circle mb-2 mx-1 mt-2" style="font-size: 4px;"></i>
+                                        <h5 class="fs-11">Yemek</h5>
+                                    </div>
+                                    <p class="fs-11 fw-medium">Burak Gümrah</p>
+                                </div>
+                                <div class="other d-flex flex-column justify-content-center pe-1 ms-3 w-100">
+                                    <div class="level d-flex align-items-center justify-content-center rounded-pill me-2 py-1 w-100 fs-10">lvl. 10</div>
+                                    <div class="price d-flex justify-content-center">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.6875 14.5932H12.2833C12.8792 14.5932 13.3742 14.0615 13.3742 13.4199C13.3742 12.6224 13.09 12.4665 12.6225 12.3015L11.6967 11.9807V14.5932H11.6875Z" fill="#292D32"/>
+                                            <path d="M10.9727 1.74171C5.91272 1.76005 1.81522 5.87588 1.83356 10.9359C1.85189 15.9959 5.96772 20.0934 11.0277 20.075C16.0877 20.0567 20.1852 15.9409 20.1669 10.8809C20.1486 5.82088 16.0327 1.73255 10.9727 1.74171ZM13.0719 11C13.7869 11.2475 14.7494 11.7792 14.7494 13.42C14.7494 14.8317 13.6402 15.9684 12.2836 15.9684H11.6877V16.5C11.6877 16.8759 11.3761 17.1875 11.0002 17.1875C10.6244 17.1875 10.3127 16.8759 10.3127 16.5V15.9684H9.98272C8.47939 15.9684 7.26022 14.7034 7.26022 13.145C7.26022 12.7692 7.57189 12.4575 7.94772 12.4575C8.32356 12.4575 8.63522 12.7692 8.63522 13.145C8.63522 13.9425 9.24022 14.5934 9.98272 14.5934H10.3127V11.495L8.92856 11C8.21356 10.7525 7.25106 10.2209 7.25106 8.58005C7.25106 7.16838 8.36022 6.03171 9.71689 6.03171H10.3127V5.50005C10.3127 5.12421 10.6244 4.81255 11.0002 4.81255C11.3761 4.81255 11.6877 5.12421 11.6877 5.50005V6.03171H12.0177C13.5211 6.03171 14.7402 7.29671 14.7402 8.85505C14.7402 9.23088 14.4286 9.54255 14.0527 9.54255C13.6769 9.54255 13.3652 9.23088 13.3652 8.85505C13.3652 8.05755 12.7602 7.40671 12.0177 7.40671H11.6877V10.505L13.0719 11Z" fill="#292D32"/>
+                                            <path d="M8.63477 8.58924C8.63477 9.38674 8.91893 9.54257 9.38643 9.70757L10.3123 10.0284V7.40674H9.71643C9.1206 7.40674 8.63477 7.9384 8.63477 8.58924Z" fill="#292D32"/>
+                                        </svg>
+                                        <p class="fs-18 fw-bold text-dark">10</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card rounded-3 bg-white border-0" style="box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);">
+                            <div class="card-top pt-5 rounded-3 p-3">
+                                <p class="fs-13 mt-auto text-primary">Spor yapıyorum, <img src="../public/img/uploads/profile/burak.jpg" alt="pp" class="rounded-circle float-end">pilav yapmayı öğretebilirim.</p>
+                            </div>
+                            <div class="card-body p-1 d-flex justify-content-between">
+                                <div class="content ps-2">
+                                    <div class="category d-flex align-items-center mb-1">
+                                        <h4 class="fw-bold fs-18">Pilav</h4>
+                                        <i class="fa fa-circle mb-2 mx-1 mt-2" style="font-size: 4px;"></i>
+                                        <h5 class="fs-11">Yemek</h5>
+                                    </div>
+                                    <p class="fs-11 fw-medium">Burak Gümrah</p>
+                                </div>
+                                <div class="other d-flex flex-column justify-content-center pe-1 ms-3 w-100">
+                                    <div class="level d-flex align-items-center justify-content-center rounded-pill me-2 py-1 w-100 fs-10">lvl. 10</div>
+                                    <div class="price d-flex justify-content-center">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.6875 14.5932H12.2833C12.8792 14.5932 13.3742 14.0615 13.3742 13.4199C13.3742 12.6224 13.09 12.4665 12.6225 12.3015L11.6967 11.9807V14.5932H11.6875Z" fill="#292D32"/>
+                                            <path d="M10.9727 1.74171C5.91272 1.76005 1.81522 5.87588 1.83356 10.9359C1.85189 15.9959 5.96772 20.0934 11.0277 20.075C16.0877 20.0567 20.1852 15.9409 20.1669 10.8809C20.1486 5.82088 16.0327 1.73255 10.9727 1.74171ZM13.0719 11C13.7869 11.2475 14.7494 11.7792 14.7494 13.42C14.7494 14.8317 13.6402 15.9684 12.2836 15.9684H11.6877V16.5C11.6877 16.8759 11.3761 17.1875 11.0002 17.1875C10.6244 17.1875 10.3127 16.8759 10.3127 16.5V15.9684H9.98272C8.47939 15.9684 7.26022 14.7034 7.26022 13.145C7.26022 12.7692 7.57189 12.4575 7.94772 12.4575C8.32356 12.4575 8.63522 12.7692 8.63522 13.145C8.63522 13.9425 9.24022 14.5934 9.98272 14.5934H10.3127V11.495L8.92856 11C8.21356 10.7525 7.25106 10.2209 7.25106 8.58005C7.25106 7.16838 8.36022 6.03171 9.71689 6.03171H10.3127V5.50005C10.3127 5.12421 10.6244 4.81255 11.0002 4.81255C11.3761 4.81255 11.6877 5.12421 11.6877 5.50005V6.03171H12.0177C13.5211 6.03171 14.7402 7.29671 14.7402 8.85505C14.7402 9.23088 14.4286 9.54255 14.0527 9.54255C13.6769 9.54255 13.3652 9.23088 13.3652 8.85505C13.3652 8.05755 12.7602 7.40671 12.0177 7.40671H11.6877V10.505L13.0719 11Z" fill="#292D32"/>
+                                            <path d="M8.63477 8.58924C8.63477 9.38674 8.91893 9.54257 9.38643 9.70757L10.3123 10.0284V7.40674H9.71643C9.1206 7.40674 8.63477 7.9384 8.63477 8.58924Z" fill="#292D32"/>
+                                        </svg>
+                                        <p class="fs-18 fw-bold text-dark">10</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card rounded-3 bg-white border-0" style="box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);">
+                            <div class="card-top pt-5 rounded-3 p-3">
+                                <p class="fs-13 mt-auto text-primary">Spor yapıyorum, <img src="../public/img/uploads/profile/burak.jpg" alt="pp" class="rounded-circle float-end">pilav yapmayı öğretebilirim.</p>
+                            </div>
+                            <div class="card-body p-1 d-flex justify-content-between">
+                                <div class="content ps-2">
+                                    <div class="category d-flex align-items-center mb-1">
+                                        <h4 class="fw-bold fs-18">Pilav</h4>
+                                        <i class="fa fa-circle mb-2 mx-1 mt-2" style="font-size: 4px;"></i>
+                                        <h5 class="fs-11">Yemek</h5>
+                                    </div>
+                                    <p class="fs-11 fw-medium">Burak Gümrah</p>
+                                </div>
+                                <div class="other d-flex flex-column justify-content-center pe-1 ms-3 w-100">
+                                    <div class="level d-flex align-items-center justify-content-center rounded-pill me-2 py-1 w-100 fs-10">lvl. 10</div>
+                                    <div class="price d-flex justify-content-center">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.6875 14.5932H12.2833C12.8792 14.5932 13.3742 14.0615 13.3742 13.4199C13.3742 12.6224 13.09 12.4665 12.6225 12.3015L11.6967 11.9807V14.5932H11.6875Z" fill="#292D32"/>
+                                            <path d="M10.9727 1.74171C5.91272 1.76005 1.81522 5.87588 1.83356 10.9359C1.85189 15.9959 5.96772 20.0934 11.0277 20.075C16.0877 20.0567 20.1852 15.9409 20.1669 10.8809C20.1486 5.82088 16.0327 1.73255 10.9727 1.74171ZM13.0719 11C13.7869 11.2475 14.7494 11.7792 14.7494 13.42C14.7494 14.8317 13.6402 15.9684 12.2836 15.9684H11.6877V16.5C11.6877 16.8759 11.3761 17.1875 11.0002 17.1875C10.6244 17.1875 10.3127 16.8759 10.3127 16.5V15.9684H9.98272C8.47939 15.9684 7.26022 14.7034 7.26022 13.145C7.26022 12.7692 7.57189 12.4575 7.94772 12.4575C8.32356 12.4575 8.63522 12.7692 8.63522 13.145C8.63522 13.9425 9.24022 14.5934 9.98272 14.5934H10.3127V11.495L8.92856 11C8.21356 10.7525 7.25106 10.2209 7.25106 8.58005C7.25106 7.16838 8.36022 6.03171 9.71689 6.03171H10.3127V5.50005C10.3127 5.12421 10.6244 4.81255 11.0002 4.81255C11.3761 4.81255 11.6877 5.12421 11.6877 5.50005V6.03171H12.0177C13.5211 6.03171 14.7402 7.29671 14.7402 8.85505C14.7402 9.23088 14.4286 9.54255 14.0527 9.54255C13.6769 9.54255 13.3652 9.23088 13.3652 8.85505C13.3652 8.05755 12.7602 7.40671 12.0177 7.40671H11.6877V10.505L13.0719 11Z" fill="#292D32"/>
+                                            <path d="M8.63477 8.58924C8.63477 9.38674 8.91893 9.54257 9.38643 9.70757L10.3123 10.0284V7.40674H9.71643C9.1206 7.40674 8.63477 7.9384 8.63477 8.58924Z" fill="#292D32"/>
+                                        </svg>
+                                        <p class="fs-18 fw-bold text-dark">10</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card rounded-3 bg-white border-0" style="box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);">
+                            <div class="card-top pt-5 rounded-3 p-3">
+                                <p class="fs-13 mt-auto text-primary">Spor yapıyorum, <img src="../public/img/uploads/profile/burak.jpg" alt="pp" class="rounded-circle float-end">pilav yapmayı öğretebilirim.</p>
+                            </div>
+                            <div class="card-body p-1 d-flex justify-content-between">
+                                <div class="content ps-2">
+                                    <div class="category d-flex align-items-center mb-1">
+                                        <h4 class="fw-bold fs-18">Pilav</h4>
+                                        <i class="fa fa-circle mb-2 mx-1 mt-2" style="font-size: 4px;"></i>
+                                        <h5 class="fs-11">Yemek</h5>
+                                    </div>
+                                    <p class="fs-11 fw-medium">Burak Gümrah</p>
+                                </div>
+                                <div class="other d-flex flex-column justify-content-center pe-1 ms-3 w-100">
+                                    <div class="level d-flex align-items-center justify-content-center rounded-pill me-2 py-1 w-100 fs-10">lvl. 10</div>
+                                    <div class="price d-flex justify-content-center">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.6875 14.5932H12.2833C12.8792 14.5932 13.3742 14.0615 13.3742 13.4199C13.3742 12.6224 13.09 12.4665 12.6225 12.3015L11.6967 11.9807V14.5932H11.6875Z" fill="#292D32"/>
+                                            <path d="M10.9727 1.74171C5.91272 1.76005 1.81522 5.87588 1.83356 10.9359C1.85189 15.9959 5.96772 20.0934 11.0277 20.075C16.0877 20.0567 20.1852 15.9409 20.1669 10.8809C20.1486 5.82088 16.0327 1.73255 10.9727 1.74171ZM13.0719 11C13.7869 11.2475 14.7494 11.7792 14.7494 13.42C14.7494 14.8317 13.6402 15.9684 12.2836 15.9684H11.6877V16.5C11.6877 16.8759 11.3761 17.1875 11.0002 17.1875C10.6244 17.1875 10.3127 16.8759 10.3127 16.5V15.9684H9.98272C8.47939 15.9684 7.26022 14.7034 7.26022 13.145C7.26022 12.7692 7.57189 12.4575 7.94772 12.4575C8.32356 12.4575 8.63522 12.7692 8.63522 13.145C8.63522 13.9425 9.24022 14.5934 9.98272 14.5934H10.3127V11.495L8.92856 11C8.21356 10.7525 7.25106 10.2209 7.25106 8.58005C7.25106 7.16838 8.36022 6.03171 9.71689 6.03171H10.3127V5.50005C10.3127 5.12421 10.6244 4.81255 11.0002 4.81255C11.3761 4.81255 11.6877 5.12421 11.6877 5.50005V6.03171H12.0177C13.5211 6.03171 14.7402 7.29671 14.7402 8.85505C14.7402 9.23088 14.4286 9.54255 14.0527 9.54255C13.6769 9.54255 13.3652 9.23088 13.3652 8.85505C13.3652 8.05755 12.7602 7.40671 12.0177 7.40671H11.6877V10.505L13.0719 11Z" fill="#292D32"/>
+                                            <path d="M8.63477 8.58924C8.63477 9.38674 8.91893 9.54257 9.38643 9.70757L10.3123 10.0284V7.40674H9.71643C9.1206 7.40674 8.63477 7.9384 8.63477 8.58924Z" fill="#292D32"/>
+                                        </svg>
                                         <p class="fs-18 fw-bold text-dark">10</p>
                                     </div>
                                 </div>
@@ -85,11 +313,6 @@
                     </div>
                 </div>
             </section>
-
-
-
-
-
         </div>
     </main>
 
@@ -110,7 +333,25 @@
     <script src="../public/js/fa.min.js "></script>
     <script>
         $(document).ready(function() {
-            $('.dropdown-toggle').dropdown()
+            $('body').addClass('bg-light');
+            const main = $('#explore');
+
+            $('#ogren').click(function() {
+                if (main.hasClass('ogret')) {
+                    main.removeClass('ogret');
+                    main.addClass('ogren');
+                    $('body').addClass('bg-light');
+                    $('body').removeClass('bg-tertiary');
+                }
+            });
+            $('#ogret').click(function() {
+                if (main.hasClass('ogren')) {
+                    main.removeClass('ogren');
+                    main.addClass('ogret');
+                    $('body').removeClass('bg-light');
+                    $('body').addClass('bg-tertiary');
+                }
+            });
         });
     </script>
 </body>

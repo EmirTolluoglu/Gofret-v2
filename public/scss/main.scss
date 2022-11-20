@@ -3,12 +3,13 @@
 @import '_background';
 @import '_reset';
 @import '_buttons';
+@import '_paths';
 .rounded-4-5 {
     border-radius: 1.35rem !important;
 }
 
 header {
-    background-color: $background-color-light !important;
+    background-color: $background-color-light;
     .has-search .form-control {
         padding-left: 2.375rem;
         background-color: #E4E4E4;
@@ -29,7 +30,6 @@ nav {
 
 main#explore {
     &.ogren {
-        background-color: $background-color-light !important;
         .btn-ogren {
             @extend .btn-light-secondary;
         }
@@ -39,14 +39,62 @@ main#explore {
         #shape-banner {
             .shape-first {
                 background-color: $light-secondary-color !important;
+                transition: all .2s ease-in;
             }
             .shape-second {
                 background-color: $light-tertiary-color !important;
+                transition: all .2s ease-in;
+            }
+        }
+        .card {
+            background-color: $white !important;
+            transition: all .2s ease-in;
+            .card-top {
+                background-color: $light-secondary-color !important;
+                transition: all .2s ease-in;
+            }
+            .card-body {
+                .content {
+                    .category {
+                        h4 {
+                            color: $font-color-dark !important;
+                            transition: all .2s ease-in;
+                        }
+                        i {
+                            color: $font-color-medium !important;
+                            transition: all .2s ease-in;
+                        }
+                        h5 {
+                            color: $font-color-medium2 !important;
+                            transition: all .2s ease-in;
+                        }
+                    }
+                    p {
+                        color: $font-color-gray !important;
+                        transition: all .2s ease-in;
+                    }
+                }
+                .other {
+                    .level {
+                        background-color: $other-secondary-color !important;
+                        transition: all .2s ease-in;
+                        color: $white !important;
+                    }
+                    .price {
+                        svg {
+                            fill: $black !important;
+                            transition: all .2s ease-in;
+                        }
+                        p {
+                            color: $font-color-dark !important;
+                            transition: all .2s ease-in;
+                        }
+                    }
+                }
             }
         }
     }
     &.ogret {
-        background-color: $backgorund-color-tertiary !important;
         .btn-ogren {
             @extend .btn-primary-transparent;
         }
@@ -56,9 +104,58 @@ main#explore {
         #shape-banner {
             .shape-first {
                 background-color: $light-tertiary-color !important;
+                transition: all .2s ease-in;
             }
             .shape-second {
                 background-color: $light-secondary-color !important;
+                transition: all .2s ease-in;
+            }
+        }
+        .card {
+            background-color: $light-tertiary-color !important;
+            transition: all .2s ease-in;
+            .card-top {
+                background-color: $white !important;
+                transition: all .2s ease-in;
+            }
+            .card-body {
+                .content {
+                    .category {
+                        h4 {
+                            color: $dark-pink-color !important;
+                            transition: all .2s ease-in;
+                        }
+                        i {
+                            color: $dark-pink-color !important;
+                            transition: all .2s ease-in;
+                        }
+                        h5 {
+                            color: $dark-pink-color !important;
+                            transition: all .2s ease-in;
+                        }
+                    }
+                    p {
+                        color: $font-color-medium !important;
+                        transition: all .2s ease-in;
+                    }
+                }
+                .other {
+                    .level {
+                        background-color: #B782AC !important;
+                        transition: all .2s ease-in;
+                        color: $light-tertiary-color !important;
+                    }
+                    .price {
+                        svg {
+                            fill: $dark-pink-color !important;
+                            transition: all .2s ease-in;
+                        }
+                        p {
+                            color: $dark-pink-color !important;
+                            transition: all .2s ease-in;
+                        }
+                    }
+                }
             }
         }
     }

@@ -1,0 +1,19 @@
+.multi-step svg {
+    margin: 0 2px;
+    width: 8px;
+    height: 8px;
+    rect {
+        fill: #C4C4C4;
+        width: 8px;
+        height: 8px;
+    }
+    &.current {
+        width: 27px !important;
+        height: 8px !important;
+        rect {
+            fill: #471D4C !important;
+            width: 27px !important;
+            height: 8px !important;
+        }
+    }
+}

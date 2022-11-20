@@ -111,6 +111,10 @@
   font-weight: 600 !important;
 }
 
+.text-dark-pink {
+  color: #471D4C;
+}
+
 .bg-primary {
   background-color: #501A7A !important;
 }
@@ -120,7 +124,7 @@
 }
 
 .bg-tertiary {
-  background-color: #CD8BBF !important;
+  background-color: #DCB6D4 !important;
 }
 
 .bg-light {
@@ -141,6 +145,7 @@
 
 body {
   overflow-x: hidden;
+  transition: all 0.2s ease-in;
   background-color: #F0F0F5 !important;
 }
 
@@ -169,6 +174,23 @@ h6 {
   border: 0;
 }
 
+.btn-dark-pink {
+  background-color: #471D4C;
+  color: #FFFFFF;
+  border: 0;
+  box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  padding: 10px 20px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 22px;
+}
+@media screen and (max-width: 365px) {
+  .btn-dark-pink {
+    font-size: 18px;
+  }
+}
+
 .btn-primary-transparent, main#explore.ogret .btn-ogren, main#explore.ogren .btn-ogret {
   border: 2px solid #501A7A;
   color: #501A7A;
@@ -180,12 +202,32 @@ h6 {
   border: 2px solid #BA62A7;
 }
 
+.multi-step svg {
+  margin: 0 2px;
+  width: 8px;
+  height: 8px;
+}
+.multi-step svg rect {
+  fill: #C4C4C4;
+  width: 8px;
+  height: 8px;
+}
+.multi-step svg.current {
+  width: 27px !important;
+  height: 8px !important;
+}
+.multi-step svg.current rect {
+  fill: #471D4C !important;
+  width: 27px !important;
+  height: 8px !important;
+}
+
 .rounded-4-5 {
   border-radius: 1.35rem !important;
 }
 
 header {
-  background-color: #F0F0F5 !important;
+  background-color: #F0F0F5;
 }
 header .has-search .form-control {
   padding-left: 2.375rem;
@@ -204,23 +246,95 @@ nav {
   background-color: #F0F0F5 !important;
 }
 
-main#explore.ogren {
-  background-color: #F0F0F5 !important;
-}
 main#explore.ogren #shape-banner .shape-first {
   background-color: #B9FFEA !important;
+  transition: all 0.2s ease-in;
 }
 main#explore.ogren #shape-banner .shape-second {
   background-color: #FFC1F2 !important;
+  transition: all 0.2s ease-in;
 }
-main#explore.ogret {
-  background-color: #DCB6D4 !important;
+main#explore.ogren .card {
+  background-color: #FFFFFF !important;
+  transition: all 0.2s ease-in;
+}
+main#explore.ogren .card .card-top {
+  background-color: #B9FFEA !important;
+  transition: all 0.2s ease-in;
+}
+main#explore.ogren .card .card-body .content .category h4 {
+  color: #3F414E !important;
+  transition: all 0.2s ease-in;
+}
+main#explore.ogren .card .card-body .content .category i {
+  color: #733A67 !important;
+  transition: all 0.2s ease-in;
+}
+main#explore.ogren .card .card-body .content .category h5 {
+  color: #963B8E !important;
+  transition: all 0.2s ease-in;
+}
+main#explore.ogren .card .card-body .content p {
+  color: #7D7D7D !important;
+  transition: all 0.2s ease-in;
+}
+main#explore.ogren .card .card-body .other .level {
+  background-color: #29D3A0 !important;
+  transition: all 0.2s ease-in;
+  color: #FFFFFF !important;
+}
+main#explore.ogren .card .card-body .other .price svg {
+  fill: #000000 !important;
+  transition: all 0.2s ease-in;
+}
+main#explore.ogren .card .card-body .other .price p {
+  color: #3F414E !important;
+  transition: all 0.2s ease-in;
 }
 main#explore.ogret #shape-banner .shape-first {
   background-color: #FFC1F2 !important;
+  transition: all 0.2s ease-in;
 }
 main#explore.ogret #shape-banner .shape-second {
   background-color: #B9FFEA !important;
+  transition: all 0.2s ease-in;
+}
+main#explore.ogret .card {
+  background-color: #FFC1F2 !important;
+  transition: all 0.2s ease-in;
+}
+main#explore.ogret .card .card-top {
+  background-color: #FFFFFF !important;
+  transition: all 0.2s ease-in;
+}
+main#explore.ogret .card .card-body .content .category h4 {
+  color: #471D4C !important;
+  transition: all 0.2s ease-in;
+}
+main#explore.ogret .card .card-body .content .category i {
+  color: #471D4C !important;
+  transition: all 0.2s ease-in;
+}
+main#explore.ogret .card .card-body .content .category h5 {
+  color: #471D4C !important;
+  transition: all 0.2s ease-in;
+}
+main#explore.ogret .card .card-body .content p {
+  color: #733A67 !important;
+  transition: all 0.2s ease-in;
+}
+main#explore.ogret .card .card-body .other .level {
+  background-color: #B782AC !important;
+  transition: all 0.2s ease-in;
+  color: #FFC1F2 !important;
+}
+main#explore.ogret .card .card-body .other .price svg {
+  fill: #471D4C !important;
+  transition: all 0.2s ease-in;
+}
+main#explore.ogret .card .card-body .other .price p {
+  color: #471D4C !important;
+  transition: all 0.2s ease-in;
 }
 
 /*# sourceMappingURL=style.css.map */
