@@ -113,3 +113,19 @@
 .text-dark-pink {
     color: $dark-pink-color;
 }
+
+.text-light-secondary {
+    background-color: $light-secondary-color !important;
+}
+
+.text-light-tertiary {
+    background-color: $light-tertiary-color !important;
+}
+
+.text-border-other-tertiary-color {
+    border: 3px solid $other-tertiary-color !important;
+}
+
+.text-border-other-secondary-color {
+    border: 3px solid $other-secondary-color !important;
+}

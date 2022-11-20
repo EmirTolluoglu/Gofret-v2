@@ -1,0 +1,7 @@
+//move animation in the center of the screen
+@mixin move-center($duration: 1s, $delay: 0s, $timing: ease-in-out) {
+    -webkit-animation: move-center $duration $timing $delay;
+    -moz-animation: move-center $duration $timing $delay;
+    -o-animation: move-center $duration $timing $delay;
+    animation: move-center $duration $timing $delay;
+}

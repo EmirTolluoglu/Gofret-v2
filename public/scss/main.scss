@@ -160,3 +160,11 @@ main#explore {
         }
     }
 }
+
+.pill-selection .pill {
+    position: absolute;
+    p {
+        font-weight: bold;
+        font-size: 1.0625rem;
+    }
+}

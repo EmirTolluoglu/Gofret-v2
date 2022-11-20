@@ -115,6 +115,22 @@
   color: #471D4C;
 }
 
+.text-light-secondary {
+  background-color: #B9FFEA !important;
+}
+
+.text-light-tertiary {
+  background-color: #FFC1F2 !important;
+}
+
+.text-border-other-tertiary-color {
+  border: 3px solid #BA62A7 !important;
+}
+
+.text-border-other-secondary-color {
+  border: 3px solid #29D3A0 !important;
+}
+
 .bg-primary {
   background-color: #501A7A !important;
 }
@@ -147,6 +163,10 @@ body {
   overflow-x: hidden;
   transition: all 0.2s ease-in;
   background-color: #F0F0F5 !important;
+}
+
+.d-none {
+  display: none !important;
 }
 
 p {
@@ -335,6 +355,14 @@ main#explore.ogret .card .card-body .other .price svg {
 main#explore.ogret .card .card-body .other .price p {
   color: #471D4C !important;
   transition: all 0.2s ease-in;
+}
+
+.pill-selection .pill {
+  position: absolute;
+}
+.pill-selection .pill p {
+  font-weight: bold;
+  font-size: 1.0625rem;
 }
 
 /*# sourceMappingURL=style.css.map */
