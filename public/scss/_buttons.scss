@@ -35,3 +35,11 @@
     color: $other-tertiary-color;
     border: 2px solid $other-tertiary-color;
 }
+
+.btn-white {
+    background-color: $white;
+    color: $dark-pink-color;
+    border-radius: 0.8rem;
+    font-weight: $font-weight-medium;
+    font-size: 22px;
+}

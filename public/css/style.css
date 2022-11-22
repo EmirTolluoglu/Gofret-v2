@@ -71,6 +71,26 @@
   font-size: 1.563rem;
 }
 
+.fs-26 {
+  font-size: 1.625rem;
+}
+
+.fs-27 {
+  font-size: 1.688rem;
+}
+
+.fs-28 {
+  font-size: 1.75rem;
+}
+
+.fs-29 {
+  font-size: 1.813rem;
+}
+
+.fs-30 {
+  font-size: 1.875rem;
+}
+
 .text-primary {
   color: #501A7A !important;
 }
@@ -135,8 +155,8 @@
   border: 3px solid #471D4C !important;
 }
 
-.text-border-yellow-color {
-  border: 3px solid #471D4C !important;
+.fw-thin {
+  font-weight: 100 !important;
 }
 
 .bg-primary {
@@ -238,8 +258,16 @@ h6 {
   border: 2px solid #BA62A7;
 }
 
+.btn-white {
+  background-color: #FFFFFF;
+  color: #471D4C;
+  border-radius: 0.8rem;
+  font-weight: 500;
+  font-size: 22px;
+}
+
 .multi-step svg {
-  margin: 0 2px;
+  margin: 0 4px;
   width: 8px;
   height: 8px;
 }
@@ -379,6 +407,28 @@ main#explore.ogret .card .card-body .other .price p {
 .pill-selection .pill p {
   font-weight: bold;
   font-size: 1.0625rem;
+}
+
+.interests {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.interests .pill {
+  margin: 0.3rem;
+  background-color: #CDFFF0 !important;
+  color: #3F414E !important;
+  border: 2px solid #29D3A0 !important;
+  border-radius: 0.7rem !important;
+  padding: 5px 10px;
+  transition: all 0.2s ease-in;
+}
+.interests .pill.active {
+  background-color: #501A7A !important;
+  color: #FFFFFF !important;
+  border: 2px solid #471D4C !important;
+  transition: all 0.2s ease-in;
 }
 
 /*# sourceMappingURL=style.css.map */

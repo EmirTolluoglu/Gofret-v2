@@ -168,3 +168,25 @@ main#explore {
         font-size: 1.0625rem;
     }
 }
+
+.interests {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .pill {
+        margin: 0.3rem;
+        background-color: #CDFFF0 !important;
+        color: $font-color-dark !important;
+        border: 2px solid $other-secondary-color !important;
+        border-radius: 0.7rem !important;
+        padding: 5px 10px;
+        transition: all .2s ease-in;
+        &.active {
+            background-color: $primary-color !important;
+            color: $white !important;
+            border: 2px solid $dark-pink-color !important;
+            transition: all .2s ease-in;
+        }
+    }
+}

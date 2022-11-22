@@ -70,6 +70,26 @@
     font-size: 1.563rem;
 }
 
+.fs-26 {
+    font-size: 1.625rem;
+}
+
+.fs-27 {
+    font-size: 1.688rem;
+}
+
+.fs-28 {
+    font-size: 1.75rem;
+}
+
+.fs-29 {
+    font-size: 1.813rem;
+}
+
+.fs-30 {
+    font-size: 1.875rem;
+}
+
 .text-primary {
     color: $primary-color !important;
 }
@@ -132,4 +152,8 @@
 
 .text-border-dark-pink-color {
     border: 3px solid $dark-pink-color !important;
+}
+
+.fw-thin {
+    font-weight: $font-weight-thin !important;
 }
