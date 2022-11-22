@@ -70,26 +70,6 @@
     font-size: 1.563rem;
 }
 
-.fs-26 {
-    font-size: 1.625rem;
-}
-
-.fs-27 {
-    font-size: 1.688rem;
-}
-
-.fs-28 {
-    font-size: 1.75rem;
-}
-
-.fs-29 {
-    font-size: 1.813rem;
-}
-
-.fs-30 {
-    font-size: 1.875rem;
-}
-
 .text-primary {
     color: $primary-color !important;
 }
@@ -131,7 +111,11 @@
 }
 
 .text-dark-pink {
-    color: $dark-pink-color;
+    color: $dark-pink-color  !important;
+}
+
+.text-light-green-color{
+    color: $light-green-color !important;
 }
 
 .text-light-secondary {
@@ -153,7 +137,10 @@
 .text-border-dark-pink-color {
     border: 3px solid $dark-pink-color !important;
 }
+.text-border-white{
+    border: 1px solid $white !important;
+}
 
-.fw-thin {
-    font-weight: $font-weight-thin !important;
+.text-light-green-secondary-color{
+    color: $light-green-secondary-color !important;
 }

@@ -12,115 +12,166 @@
     <link rel="stylesheet" href="../public/css/animate.min.css">
     <link rel="stylesheet" href="../public/css/style.css">
     <link rel="stylesheet" href="../public/css/hover.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
 
     <title>ffafeaf</title>
 </head>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<style>
+    input {
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: hidden;
+
+    }
+
+    .no-outline:focus {
+        outline: none;
+    }
+</style>
 
 <body>
+
     <div class="backgorund position-fixed">
         <div style="position: fixed; top: 0; left: 0;">
             <svg width="281" height="240" viewBox="0 0 281 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M-55.4242 186.855C-107.827 128.405 -88.7108 25.7984 -12.7275 -42.3235C63.2558 -110.445 167.333 -118.286 219.735 -59.8362C359.647 58.3698 227.527 73.5443 137.181 113.005C132.295 115.138 128.547 119.394 126.676 124.385C64.2369 290.974 -3.82734 244.406 -55.4242 186.855Z" fill="#CD8BBF"/>
+                <path
+                    d="M-55.4242 186.855C-107.827 128.405 -88.7108 25.7984 -12.7275 -42.3235C63.2558 -110.445 167.333 -118.286 219.735 -59.8362C359.647 58.3698 227.527 73.5443 137.181 113.005C132.295 115.138 128.547 119.394 126.676 124.385C64.2369 290.974 -3.82734 244.406 -55.4242 186.855Z"
+                    fill="#CD8BBF" />
             </svg>
         </div>
         <div style="position: fixed; bottom: 10vh; left: 0;">
             <svg width="133" height="265" viewBox="0 0 133 265" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M87.7239 238.843C41.1741 279.602 -33.8663 270.038 -79.8835 217.483C-125.901 164.927 -125.469 89.2809 -78.9194 48.5224C15.508 -56.7282 20.4364 33.7025 43.176 97.852C45.1961 103.551 49.9862 107.796 55.7257 109.697C171.475 148.029 133.113 199.101 87.7239 238.843Z" fill="#ECC3E3"/>
+                <path
+                    d="M87.7239 238.843C41.1741 279.602 -33.8663 270.038 -79.8835 217.483C-125.901 164.927 -125.469 89.2809 -78.9194 48.5224C15.508 -56.7282 20.4364 33.7025 43.176 97.852C45.1961 103.551 49.9862 107.796 55.7257 109.697C171.475 148.029 133.113 199.101 87.7239 238.843Z"
+                    fill="#ECC3E3" />
             </svg>
         </div>
         <div style="position: fixed; bottom: 0; right: 0;">
             <svg width="244" height="176" viewBox="0 0 244 176" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M309.181 9.46227C363.978 21.242 377.275 61.9415 377.074 80.8187L83.0341 328.134L0.707798 230.255C-9.24727 81.4813 92.2461 110.858 110.413 124.263C128.579 137.669 180.536 191.249 202.793 88.9666C225.051 -13.316 240.684 -5.26237 309.181 9.46227Z" fill="#69A596"/>
+                <path
+                    d="M309.181 9.46227C363.978 21.242 377.275 61.9415 377.074 80.8187L83.0341 328.134L0.707798 230.255C-9.24727 81.4813 92.2461 110.858 110.413 124.263C128.579 137.669 180.536 191.249 202.793 88.9666C225.051 -13.316 240.684 -5.26237 309.181 9.46227Z"
+                    fill="#69A596" />
             </svg>
         </div>
     </div>
 
     <div class="main-wrapper w-100 h-100 d-flex justify-content-center align-items-center">
         <form action="">
-            <div class="anim-wrapper position-fixed d-flex justify-content-center align-items-center animate__animated animate__bounceInRight" role="tabPanel" style="width: 100vw; height: 100vh; top: 0px; right: 0px;">
-                <div class="card rounded-5 p-4 border-0 d-flex flex-column justify-content-between align-items-center" style="box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.25); height: 80vh; width: 80vw;">
+            <div class="anim-wrapper position-fixed d-flex justify-content-center align-items-center animate__animated animate__bounceInRight"
+                role="tabPanel" style="width: 100vw; height: 100vh; top: 0px; right: 0px;">
+                <div class="card rounded-5 p-4 border-0 d-flex flex-column justify-content-between align-items-center"
+                    style="box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.25); height: 80vh; width: 80vw;">
                     <img src="../public/img/gofret_logo.webp" alt="logo" style="width: 40vw; max-width: 150px;">
                     <div class="content px-3" style="max-width: 300px;">
                         <h3 class="fs-21 fw-bold text-dark-pink text-center mb-3">Takas mı lazım?</h3>
                         <p class="fs-12 fw-medium text-dark-pink mb-3">Gofret sana yardım etmek için burada!</p>
-                        <p class="fs-12 fw-medium text-dark-pink mb-3">Oluşturduğun takaslar insanların seni tanıması için bir fırsattır. Haydi şimdi yapmamız gerekenlere bir göz atalım!</p>
+                        <p class="fs-12 fw-medium text-dark-pink mb-3">Oluşturduğun takaslar insanların seni tanıması
+                            için bir fırsattır. Haydi şimdi yapmamız gerekenlere bir göz atalım!</p>
                     </div>
                     <div class="card-footer p-0 w-100 border-0 bg-transparent pt-1">
                         <div class="multi-step d-flex justify-content-center mb-2 pt-1">
                             <svg class="current" xmlns="http://www.w3.org/2000/svg">
-                            <rect rx="4" />
-                        </svg>
+                                <rect rx="4" />
+                            </svg>
 
                             <svg class="" xmlns="http://www.w3.org/2000/svg">
-                            <rect rx="4"/>
-                        </svg>
+                                <rect rx="4" />
+                            </svg>
 
                             <svg class="" xmlns="http://www.w3.org/2000/svg">
-                            <rect rx="4" />
-                        </svg>
+                                <rect rx="4" />
+                            </svg>
 
                             <svg class="" xmlns="http://www.w3.org/2000/svg">
-                            <rect rx="4" />
-                        </svg>
+                                <rect rx="4" />
+                            </svg>
                         </div>
                         <div class="btn btn-dark-pink">Haydi Başlayalım!</div>
                     </div>
                 </div>
             </div>
-            <div class="anim-wrapper position-fixed d-flex justify-content-center align-items-center animate__animated d-none" role="tabPanel" style="width: 100vw; height: 100vh; top: 0px; right: 0px;">
-                <div class="card rounded-5 p-4 border-0 d-flex flex-column justify-content-between align-items-center" style="box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.25); height: 80vh; width: 80vw;">
+            <div class="anim-wrapper position-fixed d-flex justify-content-center align-items-center animate__animated d-none"
+                role="tabPanel" style="width: 100vw; height: 100vh; top: 0px; right: 0px;">
+                <div class="card rounded-5 p-4 border-0 d-flex flex-column justify-content-between align-items-center"
+                    style="box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.25); height: 80vh; width: 80vw;">
                     <img src="../public/img/gofret_logo.webp" alt="logo" style="width: 40vw; max-width: 150px;">
-                    <div class="content px-1 d-flex justify-content-center align-items-center flex-column h-75" style="max-width: 300px;">
-                        <svg width="324" height="544" viewBox="0 0 162 272" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <rect width="162" height="272" fill="url(#pattern0)"/>
+                    <div class="content px-1 d-flex justify-content-center align-items-center flex-column h-75"
+                        style="max-width: 300px;">
+                        <svg width="324" height="544" viewBox="0 0 162 272" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="162" height="272" fill="url(#pattern0)" />
                             <defs>
-                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                            <use xlink:href="#image0_162_592" transform="translate(-0.00085792) scale(0.00569157 0.00338983)"/>
-                            </pattern>
-                            <image id="image0_162_592" width="176" height="295" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALAAAAEnCAYAAAAJo8kRAAAgAElEQVR4nO2de3xc1XXvf+vMmZE0kmy9BbaMBdhYxq+RjI0JUEPoDX3cXEzTNk3S2/oWOXDzuW1DCQbaS2K3aY0dTOA2aQKYhNzepE36SeOmTS/kpoADJBjZ8sgPLNtgy7ZkG0uWZD1G0sycve4fo5HH0jzOmTmvGe3v5zMfSXNeSzO/s8/ae6+1NiCRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJ5ArktAES97Lkrc3lc73iEQBg4uG2tTt3Om3TdFSnDZC4F78f5YjgSwAAxnkAUsCSK6x555HnQbQEABSmTXvXfeWE0zblG64XcMs7j6xWiT4e+0vse/fWZ/7NWYskbsL1AlaIbgFijzFmegFAwQi4bd3OB522Id9xvYDN4pa2L9ylCNwFAELBG/vWPP2G0XOseffPPgmhfAQAoIjvt6195hcmmykxyKwR8KR4vzT5OwAYFjCxcjcIDwKAEHQEgBSww9gm4LV7v7AFkwICsPXdW5/eYte1JYXLrGmBZxNr926+BRBtAADm/e+u23mLwyZZhusFLJj3KURbAYCI9zltj8RduF7A7et27gew32k7JO5EcdoAiSQXpIAleY3rXQg3obH4vofoCACQIt522p5UCAXDJLBn8s9jdl/fziAgKWAD7F/3zOsAXnfajkzsW7PjGBCbtMmFiSJ/n0cbuRsAFEETeo+zMwhICtgijv7NH1SHPWqNwp5qMPvYQ6wIbTAa9fUF/uc3e5y2Tw/vLdsSRhYTPnYyawTMJLrASuyxSqLLrPPu2/JZv1rMd4L4dgKWMVMTEW4OT24XBIAIYEAjD8iroWP7JgB8gUFHibkThP2q4D3LnnjpfbPsmi3MGgG3rX3mZQAvm3Guju2tDcT8aSbaAPBtsXdjuQGkO0WAriHgGhDdDQBRhRB8qrVXAf4RLJ5d+cS3Tppha6EzawRsBh07Wj8FQZ8DcAfrV6puiKiWgT8Gef64Y3vrq0z0tcDmFwsm+s4KpIB1cHBH62eFoC+CMd++JCy6lxj3dmxvPcqMvwk8vuv/2HXlfMI2AVvlg1rJe08/sDCs0XeZ6XYLGlyd0FIi/H1we+tDPg9/5uYvvHTaKUvciEzqTEHH9k2fA/NOEBU7bcsUzONMyqOBx174mtOmpMPOcWAp4GkceeaBqmiEvgvQrzltSyqY8RMuivx+88MvDzpti9NIAScQfGrTMiJ+BaAGp23JDF/wsPi15Y9/q8NpS5xECniSg0898CsCyo+JMNdpW/TDw8T8n1c+/tLPE99d8tbm8vIisRoAhMbDkxF9BYkchQBwaFvrXYLo9fy7m6mcifYc3NH6mys37/r3+LtzvVgCEZvyVmKhqFkFtK/d+0Q1I/JDAACjr23d079thtVmMuuj0Q59pXWlRvQTp+3IBRb44eFtm9aYfd6IVysiYD0B60H8EbPPbwazpgUO/PLzjaqqNgJANBrtCt72bFfwyw/NF1r0NSL4nbYvJ4iKNeJXOr7SesuqR3edctocO7FNwMkEZNe1AcCnqBshYhFSPkXdyoytHTui3weo2k47rIOqWOMf8g9+Z82tTptiI7YJeLqAAOjKSraqMk/H9k1/SYTbzTiXWyCi5kMn534ZC/FDp22xC9f7wAmVeb7EHBdybjT3RepB/IQZ53IbTHjsN0+FrnfaDrtwvYDNRmHG7x8PfYJAHqdtsQaij/WEH3faCruYdQK+pzuMOWHUOm2Hlfij3BLoizhthi3MKgF7Ncavn9GdGZPXbDg17rQJtjBrhtEA4O6eMMoj7LQZtjB/VGDFpQgOVWX/FWebE2cns0bATKLr3u6JCQBFTttiF/edGh88WFWW9TRyPuTEzRoXYtd/DJ2ZE+ZZI14AWDgiKnbtufxXTtthJbYJmEl0MbCHgT3sREC7gj+w/ZougEGfcdoGK7HNhTAzqTIbmGmDc1kVzkHA7wLY7rQdVjErfOCDX/mj21jkU5ikqbQc3PbfK1c+8Y0Buy4oK/OYDAvlXqdtcBQlvB7AbrsuJyvzJGBSfeB1JpqUdzDoDtgoYDtxvYDNqA/MQNMsdH+nYKambI7Lh4B21ws4V/Y9/1kvDfJCp+1wEiJelM1xEa9W5I1gPQAw8XlzrTKHgh8HVi/xrInMSk1sNdBCpOAF7PGye+o6OMixpz9bY9e1QiEMA9gKYCvI2vWVC96F4Ci82dymoYiGc8OxGpM9QxMY0wTGIgI9Q7GQgO7hCaxfWIFfX1Rlip2XQhF8re0c/F4FJaqCEq+C+XNiE4fzy3wo8XpQrCpomJPdZGJYE7UA+kwxNgPH7tgxDJ0JC7lS8AJWQIpmYP+9PcP43uGLuvZ9v38sO6OS0D8WQf94FP0JQWQHL4aS7ltVrOJL64259YJgWwtsJwUp4CM7NgWiLFYB1Kgxf9xI+Yt4CxtnfpkXJV4PStQrLWJViRdVxZ6pv81gcbUfj97WgLGIhvcHYioeiwj0DMfs6RkOYywaW2K0fzyKUESD36s/Jp+ActOMdREFNbp04KsbKyjs/TYBG668yzD6b14KRVDt95prnEmEIrHniRHxxmAwKAhG0KvguWWbXwxmOqK5ffM8b0T0TB59vu3WnfOMW2wtBZOVfHD7AxtEmL5NQEXi+8blC1T7vXj12Ic4OzCGvtEwTg+GEIoILK0tg9/nQVNdOW6/vgqlPnM/vtFwFG+f6kfnxWGEwhqO9o7A71WwsMKPmlIfrqv042NL6rI+PwEBEAJRxsaO7a1bVj22a6uJ5juCbS2wlWslx1wGHEi6kdlI2XS8efISdh8+j75QOO1+fq+Ce5fU4T/dVJezkEfDUfy/4xfx6rGLCEVE2n1r/D7cv+Ja3HG90WoAM29lBoLsi9ydqkhgPrTABTGMFhHmRLk9+cp72PXu6YziBYBQROBHhy/gi690YjQczfqao+EovvhKJ350+EJG8QJAXyiMF/eexlP/cdzYhZIkohAQUCa8eb3oet4LuGN76xYirJr+/tCFAfQET6Hvgwu6zvPiO104M2g8j6wvFMb2105kJeLRcBTbXzuh64aZztHeEex6R78XFg2nSPIk/Omhba05L8nlFAUwCkEzPvwPO7sx/OHl2FYls/vw5slLeKurP2sLTg+O4Xvt3diw/Foc6x1Be/cgTg+MzRBmjd+HhZUlaGmowJLaMuw+fB6nB7Mfinuzqx9L6spx5w2Z3YkL73UjOhFF3ZJ58FeWXbVNKLQFJqwr5wQFIODYXH2cyFh4SrwAdHn5nReHczZi39mBjDdBXyiMvlAY+3ti9hWruXdBOi8O6xIwGIhORHDhvbNYuHYxPN6rvvr1qQ5zO3kt4MnO21VExqc/jjOLpLM3dwGPRwVAhOsqitFUW46Whlj8/NL6OQCAox8OAQDauy+js3cYZwbHMR4RhjqYyei8OKJrP550gkVUYGJkfEYrfGDbQ43NT3zTlJEhGdCuk7A30qWE3TNe+1f3LsF1laVJt8WFHP95ZmAUT77SmftFSWeZgITdohMz/WEV0UYAVwlYLjVrMc0PvzwYfGrT5cSq6kVlxVA8CoQW69GTjhauqbYcb41m7wMDwHWVJSnFm3z/UlxXWZJVxzGRplp9E2zMVxSsFs286aNQZ7S+Mq0+Aauykolw1YySx6uiqjGhcpSOJ3RLQ0XmnTKdY77xc2RzzHTuuN5YMJG3WEVR2dUBesy4bJb7YDd5n5VMEM8ylKs6IRUNNSipKMNo3xB8/szxCqsbKvDp5vn43oHs1uC+o7EK968wPsZ//4p56BsNZz0C8unm+VMuiR6KSotQ19QwvQMHAru6lU2H612ITPWBVz720u6Op1r/BUT3Jb5fVFaMorLiqc5LJu5dUo8zA2OGxdRUW4ZN6xoNHZPIp1sa0DcaRmevvs5YnDsaq3Dvknrd+193y41I9ThSY8NoeYnrBZxQHxjM9AKAGQWuRVF0I014u5KtMEQGgiE2rWvEHddXYffhCxkFVVPqRevahYZawGSU+lQ8cc9N2N89iO8dOIu+0fRVJZtqy7Bh+TU5X/cKvHXZ5l0ZA3vciusFrIfmh18ePLDtoQCR9jKmjWkaDeZZWj8HS+vn4PRAaCqoJj5UdV1FyWQwT5mJAoqxuqECqxsqcPTDIXReHEEorOHM5CRHU92VIKKFlVku55H8g9iz6rFdedv6AgUiYACY7ITc1bG9dQszfT7eGmc7zLqw0p+9WHIgfgNZCTMuE/GWVY/tetbSC9lAwQg4zmSLsuXAtocaPUokAKaNTLgv44EFDoGGGDgA8BvM6suBx60bdQiFMDzXi62TF859ligNBSfgOJMtclfHjgdqwGSLgE9cCqHt3AgWVRVjeV1p0qDzUERDW88w3h8Yw6eW12URmJ4d5I0uX/nIt88aOSbbuhAyJy6BXCvzEEixq6T1Kx8M4P2Bcew9NwygF4sri6eSM/tDUfSPRXBi4MrExa8MTWBxtT1uijdKRlIDAeRHXQjXCzjnyjwM2xaLuL+pBu/2DONQ7yj6x6JTYp2enFlVomL9wrm2iRcAJhRf9kHLLsb1As4VYhplm/JOGuYUoWFOEX5raQ26hybw/sAYxiKxdPwSbyxVflFlSdap8blQ5blkqS/qFAWTE5caMepE3H5czK6AIRb82T+ZVwPARdj2zfoUdaMi8Loi8LpPUTfadV32cG5ROgUAAx86bYNVFLwLwfB9ABjuvxQURJzV006uUuQCVj36zYvB7ZvGCChx2hanYKaj2RwnwyndAuOw0yak4lLI+kESArIScD4wKwRMxG9bef6tPz+NrXtOGz7uUiiCv3zzDHa1WzzEqvBeay/gHHkf0K4HYusfg/3jUfyos2+q9FMmTlwK4VvBWMp/ide6ryGsQFsZarD0BnaSgqqNlooPnvrs3BHipNVnzOCN04P4Ueelqb8byn0zSqT2DE1gbLJwSeJsXImq4NHbGiyrxXa0Qhn8vQefr7Tk5C5gVggYADq2t/4EoN+w6vwnLoXwo84+9Izo82lLVAUr6vy4v6nG0niI7y4qPrXjE397g2UXSILMSrYAZvwDESwT8OJqPzbffh1CEQ09QxNTJVKnM7/ch6oSry2THBMK8ItrvbatDxdHZiVbgHfctztaHBkBoSzz3tnj93qwuNpva5xDKvbXeRFW9Obd5yezYhQCAJZt+bsRJnzdaTvs5GfzXTKVbSGzRsAAUOKhp8FsvJJeHhKsUXG23J5YYyeZVQJe8oUX+pjoq07bYQc/XVC0f3LYMqdFIt3OrPGB48wdi2wZKlE/A1CD07ZYBTN//bsfe/Z/OG2HHcwaAcfDOX8HwKPtQ/+zaZBNL7LiDvgseSYec9oKu5g1LkRiOOfOwJzrwfwNp22yAobyh6se/ftRp+2wC9e3wJkq82SL31/y8Gho/B4i3GTG+dwAM74cePyF1522Q2YlJ6CnMk82LP6Tv504tL11gwDaANJfVtKlMPMbgcd3Pem0HYC9WcmzxoVIxorHdh0F8W/HljLKX5hxpBzKhsx7Fh6ub4GtZtXml17p2N76JIAvO21LNjCjy6PxPTf+xYuXM+9tjGzrQtjJrG6B46x6bNdfg/FovrXE54fGtd2Hz31mxV/ssiTnLeLVighYT8B6EH/EimvkyqxvgeOsevzFp//hz36v9Ob68rwodnesdwTf2HvaMxYRL912220tv/zlL6eyjpe8tbm8vEisBgCh8fBkbY2CZNYJmEfC0F7rXr6qefX/AuNuIiyPb3v27VOYN6cYD926ENeUuzOOQDDjleO9+LejH0KLPS+aolEtFGheHd9lDJv3HBG/uuAWz01zoS6q2A/gFqfstZpZUBcCWL589Y3RZzt+jQfHwRdCAPAJAq6KhvZ5PSAinB+ewJdfO4FPrLgWd+tZvspGLoXCeKntLD7ov7rSj8ejQAgBTTAAlGAseov411MQAFil5kCg5evM2q6Ojo7ky/HmMbYJ2KeoGyFiw2E+Rd0KG4ZZli1bVqX6ircQ8MeiM3V5CNWjQFGudAcigvGPHefQ3nMZ/211A6r8PqtNTQszY8+pfvzzkQuYiCZfjlZVPRAR7arFXACAoqyA6HNE6ucCgZY2Zjzd0dH+AyvtlQHtJrCyufkBBcozANIW21UUgqomj9o63jeKLT87gXsWVeOjN9agvMj+j+tk/yj++fAFnLgUSrsfEcHn9WAi3ZK3RGuI8P1VzS0Pshb9w4MHD3abbC4AGdCeE42NjcUVldXPA/iDTPsSAd4U4o0zoQn8+7Fe/PuxXty+sBIfvaEaDRXWl5h4+4Ne/PjQWQyy/ly5mIhVhCPp6/gR6KPk8QZXrmz53YMH21/L1VYnKSgBNzc31wpWXgXQrGd/r1fVtY5cnLdPD+DnJ/twbRHwG8vno7mhCsUm5bOFoxoOnRvEmx9cxLtdlzAe1UBEqKk2lo+pKASv6kEkmjE7ulrx0E9XBlY/dDC4f1fWhjuM6wWstz7wsmXLqhjKL4lwo57zelUPlCzXHzhy4TKOXIjNG9xYU4Zl187FwqoyNFT4MW+uH6UZXI3xiIbuwRB6BkM4PTCK985fxvGLQ1nZkoxYp46hieT+cuKuCuHFVauaRUfHgW+ZZoCNuF7AeuoDNzQ0lKje4p8B+sTr8SjweMyZw/mgbwQf9F29olGx6sGcEhVlRb6pjOOwJjA0HsHweASj6fxUk1BVBSLCMzp1ySBFeSkQWP1hMLj/J5YbZjKuF7AeamrqvwfS5zYQEVSTxJuK8aiG8WENF4edq4enq1OXAAP/e8WKFYsOHTo0lcUsi/slwCS6wMoeAICJlXkCgZaNIOgOZMlxcXhDPnOu5Hol5tj/q2eCnAhVHo/vawA+E38vH4r75XVhk0AgUAHynABQY/RYj6JAVRXDgtQ0Df0D+uNm6uv88Ho9CEc0RCIaBgb0N2TZdOIAQAiBaFRAZBHawQJ3dnTsf8vwgQk0t2+e542IHgBg8Pm2W3caX4dXJ3nuQiiPIgvxAoAmBLSwgFf1GPOHdQj+tnXzsaChHD5f8o93ZGQCncf60XnsUtLtuRCJatC0jJ231Ch4DsDqjPu5hLyNRlu0aNEcEH0+l3MoRFAUgw8hHa3ayZMDKcULAD6firPd5o06JKJ6lJzcJAJaVjQ3/6p5FllL3grYX17+OwCyLn9DRPBOxj+YzYcXQ7jwYeq1lg8euojRDGsiZ0t8MiMXPKzkTUZz3gqYQJ/K+tjJHrqVHbJfvtOT9P3+/jFLXIdEiCjtEyDzCXBfU1OTuyKZUpCXAr755pt9BFqfec+ZECEn8RIUkI6PbXQ0gjPdMzt7RsRbjApDtiWi5NgSFxeXfjTrg20kLwXsKSr6FWTRAY2J19j08YxzQEEZ6nXtW5UkZqKysljXsSqKUYLcyvoqSi4i5ttzurhN5OUohCJohdFbzwzxxilCOSI8hnFKXTO7tNSLsrKZYZgLGsqxv/1CelvhwRzMA5kwyhkXcaYAnyRG3JQPOXH5GdCuM97hyu7miTdOKdUighA0JK8VuKAheRRnWVkRSku9aTtxczAPClSwScuDxUQcG4vWCzPdkA9rJeflQocEMpTv4/OZK95JGzAH81P6w3X1qQdI6utSl6Hwcw28FqwIpigKfIYi5zgvasflpQ/MYN0j9apq7mhD4rk88KIc1ybd75q61HW06+uTC9gLP/xUdeVaJk+UKooCj85xbyIq1X5+qjyb64RCGAawFcBWkHXB7ECe+sAg0t2UCE0AJgbvTI/u8qEUJVyJMbpSyb+ysgg+X2oT6+tmts4K1Bk3A4NNlTAzx/Pm9O0/FM4ql0pW5skAMesXMOsLKcwFP9VAxZXRhfo0rS8Q84MrK6/2gsoxDwqsLUgtDIgXADSoOcxJ24PrW+BAINAIeO4DcBeACoADIIoNkMa/D4r/kby90jSRMu/NDGL+8DwMoAsMgYaGzE/e+rqyqcCeUq6Fl/QNr+VC+gB3nvw8Jz9DAnw/6jocaesDlahAhW9uIBC4LxgM/ovlhhrAVQI+smNTQAPmrtz84p5AYPUfAvg8CIGr96KkvwJ0JX5wGpoQUC1u3WIuwDwMoRvX1GdeR6au3o/OY5diLghZv4wbMydvgac+M0p6/3P3SLyd8IM8uwPNqwHmlwGx9e8/eUuj4qHBZZtfDFpqfBocFfChba13CQX3MdMGIjRGJz+pju2bAAD7uwfR3j2It7pSp8RfRVy804TMHPsCrY7l9cGP2tJrdO17TV0pFHhRlqITaDZieusb/4wMfCZ3NlahuaECTXVlG0t96kYBQHDs+2JGF4A3PMzfWfHELttiiG2LB1679wtbMFkm9frL0eeeaB+dSwRdw2m9IxP4hwPd2N9jsH5dgpA9HiVjBrKuU2oEDKQLE2CsuceL6vr03QtNY/z0n0ZBInU/iUmDUm3OMm/hSHSyBZ50FQwId2ltGR64dSFqy/SNXkbBbz6/vPS9YI33gtV1IWzvxC0Y0fBIcORBveIFgNqyIvzJnTdiwzJ9rdsURFN+8owWyDIIwTejmBhL32F6r01LK14zucp9MCjee2+qxeP33KRbvACggu7c2Bl6sLkv/CUwHjForiFsFfCCEQ1f3DeCIs6ux3L/inloXbvQ2EGEWKPDyCpDIRsiYeDAm9GUox89JzX0nLSvgx/rvE3aYkC89y+/Bp9uWZDVNUujwOcOj2HNxbClvVPbBHz95WjFI8HUMbJ6ufOGatzZWJV5x0QIADO0zLUSTGOwj3E8OPN6I5cZR961zw4AEBpfGbHRyZ2NVdiwPPdMoP96fKziyI5Ngcx7ZodtAn6gM7Sh1KRs8tZ1jagxWq+MyPA4aK6cOirQe+5KSxuNMNr3RGCbN4ME98FAy+v3KvhUizkzyf4oUUSwZWvz2SLgQ9ta76ofY4PP/vTcv8J47z32Zdo7Nt/xdhTjodiNc/AXUYRyfwgZQtOE4a76vUvqUGowIH5IlGBfeDH2hRfP2EZEdx3ctimn+JdU2DKMJpSZHbbouRGMv9kDHonAU1UMtbEc3purQToL6N1xfTW+234WoYgBQRJB08RVlSitJhoB2n8exbxGBRd77C8An02C58du0hfvDABtE4vx/Mivoy1yZbGnJrUb36956qr9OKYB09fms+WbZKYZdRvCe8+DR2IhhVr/OCbaezHyg+MIH9BfLX9pnfFYk5wydrNkqJ/R2W6v3wvEnjhGb5mltWXwp4njiDMkStB66U/QOvCnV4kXADqjDeiMzHBB1h/46sbsU0xSYLmAj+zYFCDC3OnvU5Jgb4QFJtp7Mb5HX9XP6yqzCDskst2NcIpsbtYmHbOInZEGfLLv8RnCTWSeZ2bqlDqumt6Zs1zAQuOkd533ptTTp5H3B3WJuKY0u2UAnGiFncCK/3NIlODhgU04J1JP5vyXkncwRxlLud1MHItGUxfOgXfRjIZ5isj7g4ieTl87oaY0u4kATbM+Qs1psnEf9PCV4U+kFe88zyU8Wv7D5DaBGs22x9FwyuL1C9KL+Hj6adTOi9muYpoisKWAiGrm+9xDogQ/HluXcvsStRtfrXgxZetLYNPXRbF8FCJaHA0q4dRVxovXLwCV+xA5fAk8bUSBwxZ1fCbHhD3WBqg5SrY3aCjNZ35OS93y3uI7ga9WvJDWdVA8abJgs8TyFrj54ZcHmdGRbp+ilnqUfvIm+Jpr4amK+bVKmRe+5rq0525PUndBL5oQBetGMDM4SwHvT/OZNnm7sUS9um9yd9FB7Kp8Di9VPZdWvMy4bEXYpS3jwES8G6BVafcpUlHUUg+06BuDDIU1nB7MraMQa4XzukBnUqJRLes6sn2hMM4MhHBdZfKk1B/UPIW2idhkxRJvt+7OWkwD5mOLDyx80WfDBFMLJO8+fC7nc+gowZ+XTIVNZslPj11Mu31N0QmsKTphaKRBCNWSHDlbBNz88MuDB2vUd8w635mBEF493pv9CaZCLAtvNEIIkfPow5td/Tl0kJPAeK75iW9asrClbaMQzy8rfeNAde4eSyisYdfe0zme5cpXXGiTGleyjnNzjZ5784O0HTq9MKNj1eMv5lQGNx22DqN9e2kJzpZmf8lQWMNTrx3P2fdN/G6NpJnnA1dNXuTwr4UiAk+9djwnETOjg4sid2VvRWZsFfCYquAv15Tj/TlK2lGJZPSNTpgjXgCJCi4kN2LG0yTH/unpwTE8+cpRnBlIv0poMnqHJ97loshdzQ+/bPrQWSKOTGRsbynf/bNjFx7W42eFwhp2Hz6HJ185ao54k4i1UDpzyZ8mud2cfaEwnny1E99rP6urNe4bncDXf/FB359/vO7/PviRms+vefcRS1OKHMtKfuRb//psINCyYWGlf31TXRma6srgT4hB7bw4jDMDY8YTOdOSPLBbaAyLs+4th5lTxD6YM0z46vFevHq8F0try9BUX4amhEjAUDiKM4NjaO++HGtk6vx/7QNiQeyFvVay2HJ6cOz104NjuY0q6Cb5lxmv3mPnElpmkz7fL3XRF6Mc7R3B0d4RAClKxDLvoW23/QARYVkWRiKOxkIEg8E3wPywLRfL8CTN99gIoaWz37Yb8zIgLMm8SIXjtdGCwfZnwfiOtVfhjN+hFcEvdhEr2pfJj7fhBmXtrmAwaMl4bypsEzCT6GJgDwN7eNpKncHg/o3WiVjf4zNevScf0ff0sLQVvgzG/cFg0PYSU7b5wG1rn3kZaXKigsH9GwOBliCIjPlOukSnT5i6igASI6qGoEazXuFLF4Ii0Lwh6Il4FkLo/BwyE6t7YkTsfBosNjghXsAFLkQiMXdCuxvMe3QfFK/vZcJLz3AagyFU67MNWNEgikYz7xev+WvW52DISH4OLAJOiRdwfBRiJsFg8A0AdwUCqzeAeEumKDYzsasIoJk40vlkfAfQttjt7ybDdVsIRI4AAAmRSURBVAKOEwzu3w1gd8t3/ujPqWf0r/nYIPhi6DxfCPmBySRR80aHptCEgJpHke6mT8IwAEr4YOtKRqjIE0W57zIf6f/85PfiGlwr4DhKU9UlpakKuGcBmPlf29btfDBxe6B5talNkBbNHwGnrPmbGw8GD7S/AMxYdX6s7dadrhIvkK/LbFkII3/ciEKZAs+FvFxmy2ryJe0+3ydfzMD1LoQTRC1eU8MMLHIfTCEUwvBcL7YCAAgmRsbPRAo4BYIZiovdCDc/JexcZksKOAWaJqCkaIXDGMUQ9K86nw0eeOBPs2KnW1tfu3HVRIabEC5u4ZjZtmrzbkcKOAUM9z6m3WqXE7jehRDM+xSirQBAxPtsvbZLq/cUWh5fLrhewO3rdu4HsN+Ja2tCQGXFVWPCbMPSufmEdCEy4LbOUlS6D1chBZwBt812FVodi1xxvQvhNPG0eze4EbHcPaetyMyStzaXz/WKRwDA6pU6pYB1IISAxwW9OTvXucsFvx/liMSWFbY6K1m6EDpwS6/fbf64G5AC1oEbqvcIYc2SAfmOFLBOnO7MaXmcNW0l0gfWidPVe5xwYyaK/H0ebeRuAFAEmVrf2SykgHUiHJxAcGro7L1lW8IA3nDk4jqxTcBMogusxLKNp9WFyBeEcGY4TU5epMY1dSHygaimwava+9Byc+B6KmRAu0uJeRAxMRmS1OREiJFj4vs6PfqRDTKg3cXEO1OGatck/KLXA4nvJt2H9MhhNIMY7VAlTkMb954p79wHu5ECNojxJ/oV2bLz4RQFhxSwxVyl2Tz0Z92OFLDFyFbXWmRlHqthAz03iWFsE7BPUTdCxELsfIq6FTqHWVreeWS1SvTx2F9i37u3PvNvlhlpBQnaJSLXxBbrYe3eJ6oZkR8CABh9beue/m2HTZqB64fRFKJbgJjwmekFAPkl4OkVNPNDuwCAiFcr8kawHgCY+LzT9iRD+sAWkqy1JdmPMxUpYCtJ0trKTp25SAFbSLLWlqSCTUUK2EKSaVXmVZiL6ztxTlbmyRVimuFG5MsIRL7gegE7WZknVxgMSuII59NQmtuRAe0WwcxCMG9XiMJJtm4EaKH9VhUeMqDdMuhs18kTf55syw03Lr4GwIPJtrkJmRM3iyHi1E8Z5s58mF7ONidOVuYpAJjRmWobkVLQLpSszFMIMKcUsKalFrfEGFLAFpGule3qOn6cmWWlEhOQAraIDK2sAKjbNmMKGClgC2Bmravr+PF0+xCldjEk+pGdOEugbgBpsz+Z0UmEe20yyFZkXYg8R1frytzl9qG0bAPaZV2IPCfdEFocQdzpfMns9MiA9tkKp5nEiKNp0gc2ASlgCxA6XIiurq4zcigtd2RWshXoa10FQO8DWGK1OYWMbS2wT1E3KgKvKwKv+xR1o13XdYDhrq6uM3p2JMgZuVyRLoTJMHASGYbQpvaVY8E5IwVsMsTQ7RqRjtEKSXqkgE3GSKuqpQu5lOjC9ePA+VaZx0irWva5gG/s7w5aaU7B43oB51tlHiOtaslHGreNffs9YCxqpUm2IwPa85lo1JBf66n1QzszZJU1jiAD2vMUZr7c1dV1wcgxnnllVpkzK5BZyWZCZPj/8swrt8KSWYPMSjaRbIbFlJoSK0yZNUgf2ESYjAvYM9+9LoRMq59lkJ4otGl4rnWvgPNhqVnZiTMRLYupYaXUB5TIdiRbpIDNxOAQWhw5EpE98tY3ickhtEGDR+1j0LBnrq9JA+qtscx+ZE5cPpJFB65t3c4HAeCGRTdtocnZxkJA5sQlkC/1gXOJLCNGZz4t/uImXC/gfKkPzFlMYsTRNO70qFLB2SA7cSaRW2xvpDBnJm1A5sSZhKZln13R1dU1eMONiz8kIld15PJhoUOZE2cCzKyNjg6+n8s5KItOoNVEvFoRAesJWA/ijzhtTzKkC2EK1N3b2zuS0ykMpCJJruD6Tlw+kLYaexpa3nlkteKhcgDo/6Mfn6Qxc+2aDcgW2AT0lJJKhgf0QtytUpfUjZpt12xAtsBmkKYau16Ua8vOacGLZlhjGgdadpyDy5cnt60FZhJdDOxhYA8XWEC7GWte+NZe0y1LTRlHBrSbgBlrXqiLq0OTdYXl+nEGkC5EjsSqsZ9IW41dL7G6wvm/AKLMSs4vzgO4Dld8RZr2ezI3TQBgjkR95It9BQM/OzZPRLVzqpr/X4mdWcn5+ml5ELPd8VEUZnEKgM/gYTG7+UoHSYSjqtC083BYwJqmFQHwA9AmX64uWuEmAasAvIiJMy5QT4q/XYMmxEmzzhXWIid9KDLrdFkRiYTnAmiY9raGqwWtJXkvAgfEbreACbHWavrLCxe0pgYY0VicBYBoOHLKrJNOhELv+0v8RwFAYSoDsMCsc+eIkYZj4sNvv1PV8PtrE99ToLNip1GsFLAKoAhA8eTPuFgLgTIPKUsBwOP11ph10sHBwfPVNXVLAYAon+7nqyiK9I2WTv2lsQfAIsRa6DCAcQATk69IrhczU8BFAEoSXm5yTyTO4518lSa8pwEYS3iNGz1priJTAJQDmItYS2s7QogjmfZhxhwA8wA2xX9mYc7TUBuZOMxCjAIAXxq7KhiImaFpJs5rEPWCcYkIaU+qaVq/eRfNiAdA2eQLiLXQlwEMAentjJOtgBUAtYiJ19Fn3cGOA7+ValtFRcX8yqqabYqiLLPTJr0c+I1vfDHVNiEEQqGQmZerZeaJ8bHxbefOnf2ZmSc2ER9iuqoFMAygFxk6htkKuAEOtbh6mTdvwa+W+Eu+7rQdboKIGkr8JV+/rvH675zpOvU3Vl1n9ETf6MS5y18DAKFp2YaZliOmsTNI0xpnI+ASuFy8AODxqkudtsGteBSPpZ9NaN/p0Y77X/xbE07lRcy9uJxqh2we/3GHWyKxmjCAtC14LqFycwFUQ442SMxHAOgHMACA0+2Ya6ynglgTX4rY9KOrZskkeYVA7Mk+ilgHTtcohNnByvGx4GLEBC1bZ0kqNAAhxMZ+sxoDBqyPtvciJmQ/rszGSWYnEcRm38YQE64p9YadSBdJnFbO11gISWriU8ThaS9LYiHclO8Uj0ZTU7y8zpkmmSSa4hWBQ9FobhKwHuJhlcnEHf9dtuTGEUgtzsSX68g3AWeLMvnyTP6khJ+U5O9021JlXhjOyJj8naf9nuy96S+R4vdU20TCSyaOSiQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEkh/8f3Dho04BCSSHAAAAAElFTkSuQmCC"/>
+                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_162_592"
+                                        transform="translate(-0.00085792) scale(0.00569157 0.00338983)" />
+                                </pattern>
+                                <image id="image0_162_592" width="176" height="295"
+                                    xlink:href="data:image/png;base64,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" />
                             </defs>
                         </svg>
                         <h3 class="fs-21 fw-bold text-dark-pink text-center mb-3">Hangi Hapı Seçiyorsun.</h3>
                         <div class="pill-selection w-100 h-100 position-relative">
                             <div class="pill hvr-grow-rotate" style="left: 20px; top: 0;">
-                                <svg width="89" height="68" viewBox="0 0 89 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="-6" y="40.9551" width="95" height="38" rx="19" transform="rotate(-29.6211 -6 40.9551)" fill="#2C93F3"/>
-                                    <path transform="translate(63,5)" d="M1 3.98775C3.16667 2.48775 8.9 0.387746 14.5 3.98775" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                                    <line transform="translate(35,17)" x1="20.1271" y1="34.4878" x2="1.12706" y2="0.487819" stroke="white" stroke-width="2"/>
+                                <svg width="89" height="68" viewBox="0 0 89 68" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="-6" y="40.9551" width="95" height="38" rx="19"
+                                        transform="rotate(-29.6211 -6 40.9551)" fill="#2C93F3" />
+                                    <path transform="translate(63,5)"
+                                        d="M1 3.98775C3.16667 2.48775 8.9 0.387746 14.5 3.98775" stroke="white"
+                                        stroke-width="2" stroke-linecap="round" />
+                                    <line transform="translate(35,17)" x1="20.1271" y1="34.4878" x2="1.12706"
+                                        y2="0.487819" stroke="white" stroke-width="2" />
                                 </svg>
 
 
                                 <p class="fs-12 text-dark-pink mb-3 text-center fw-bold">Öğren</p>
                             </div>
                             <div class="pill hvr-grow-rotate " style="right: 20px; top: 0;">
-                                <svg width="89" height="68" viewBox="0 0 89 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="-6" y="40.9551" width="95" height="38" rx="19" transform="rotate(-29.6211 -6 40.9551)" fill="#F32C38"/>
-                                    <path transform="translate(63,5)" d="M1 3.98775C3.16667 2.48775 8.9 0.387746 14.5 3.98775" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                                    <line transform="translate(35,17)" x1="20.1271" y1="34.4878" x2="1.12706" y2="0.487819" stroke="white" stroke-width="2"/>
+                                <svg width="89" height="68" viewBox="0 0 89 68" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="-6" y="40.9551" width="95" height="38" rx="19"
+                                        transform="rotate(-29.6211 -6 40.9551)" fill="#F32C38" />
+                                    <path transform="translate(63,5)"
+                                        d="M1 3.98775C3.16667 2.48775 8.9 0.387746 14.5 3.98775" stroke="white"
+                                        stroke-width="2" stroke-linecap="round" />
+                                    <line transform="translate(35,17)" x1="20.1271" y1="34.4878" x2="1.12706"
+                                        y2="0.487819" stroke="white" stroke-width="2" />
                                 </svg>
                                 <p class="fs-12 text-dark-pink mb-3 text-center fw-bold">Öğret</p>
                             </div>
                             <div class="pill hvr-grow-rotate" style="left: 100px; bottom: 0;">
-                                <svg width="89" height="68" viewBox="0 0 89 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="-6" y="40.9551" width="95" height="38" rx="19" transform="rotate(-29.6211 -6 40.9551)" fill="url(#paint0_linear_162_594)"/>
+                                <svg width="89" height="68" viewBox="0 0 89 68" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="-6" y="40.9551" width="95" height="38" rx="19"
+                                        transform="rotate(-29.6211 -6 40.9551)" fill="url(#paint0_linear_162_594)" />
                                     <defs>
-                                    <linearGradient id="paint0_linear_162_594" x1="39.0454" y1="60.8665" x2="-17.1432" y2="60.5538" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#5A2A80"/>
-                                    <stop offset="1" stop-color="#2C93F3"/>
-                                    </linearGradient>
+                                        <linearGradient id="paint0_linear_162_594" x1="39.0454" y1="60.8665"
+                                            x2="-17.1432" y2="60.5538" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#5A2A80" />
+                                            <stop offset="1" stop-color="#2C93F3" />
+                                        </linearGradient>
                                     </defs>
 
-                                    
-                                        <path transform="translate(35,0)" d="M0 17.8848L25.4919 3.3909C34.614 -1.7956 46.2134 1.39479 51.3999 10.5168C56.5864 19.6389 53.396 31.2383 44.2739 36.4248L18.782 50.9187L0 17.8848Z" fill="url(#paint0_linear_162_595)"/>
-                                        <defs>
-                                        <linearGradient id="paint0_linear_162_595" x1="60.3882" y1="7.49988" x2="9.88819" y2="36.4999" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#F32C38"/>
-                                        <stop offset="1" stop-color="#F32C38" stop-opacity="0.42"/>
+
+                                    <path transform="translate(35,0)"
+                                        d="M0 17.8848L25.4919 3.3909C34.614 -1.7956 46.2134 1.39479 51.3999 10.5168C56.5864 19.6389 53.396 31.2383 44.2739 36.4248L18.782 50.9187L0 17.8848Z"
+                                        fill="url(#paint0_linear_162_595)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_162_595" x1="60.3882" y1="7.49988"
+                                            x2="9.88819" y2="36.4999" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#F32C38" />
+                                            <stop offset="1" stop-color="#F32C38" stop-opacity="0.42" />
                                         </linearGradient>
-                                        </defs>
-                                        <path transform="translate(63,5)" d="M1 3.98775C3.16667 2.48775 8.9 0.387746 14.5 3.98775" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                                        <line transform="translate(35,17)" x1="20.1271" y1="34.4878" x2="1.12706" y2="0.487819" stroke="white" stroke-width="2"/>
-                                    </svg>
+                                    </defs>
+                                    <path transform="translate(63,5)"
+                                        d="M1 3.98775C3.16667 2.48775 8.9 0.387746 14.5 3.98775" stroke="white"
+                                        stroke-width="2" stroke-linecap="round" />
+                                    <line transform="translate(35,17)" x1="20.1271" y1="34.4878" x2="1.12706"
+                                        y2="0.487819" stroke="white" stroke-width="2" />
+                                </svg>
 
                                 <p class="fs-12 text-dark-pink mb-3 text-center fw-bold">İkiside</p>
                             </div>
@@ -129,36 +180,39 @@
                     <div class="card-footer p-0 w-100 border-0 bg-transparent pt-1">
                         <div class="multi-step d-flex justify-content-center mb-2 pt-1">
                             <svg class="" xmlns="http://www.w3.org/2000/svg">
-                            <rect rx="4" />
-                        </svg>
+                                <rect rx="4" />
+                            </svg>
 
                             <svg class="current" xmlns="http://www.w3.org/2000/svg">
-                            <rect rx="4"/>
-                        </svg>
+                                <rect rx="4" />
+                            </svg>
 
                             <svg class="" xmlns="http://www.w3.org/2000/svg">
-                            <rect rx="4" />
-                        </svg>
+                                <rect rx="4" />
+                            </svg>
 
                             <svg class="" xmlns="http://www.w3.org/2000/svg">
-                            <rect rx="4" />
-                        </svg>
+                                <rect rx="4" />
+                            </svg>
                         </div>
                         <div class="btn btn-dark-pink">Haydi Başlayalım!</div>
                     </div>
                 </div>
             </div>
-            <div class="anim-wrapper position-fixed d-flex justify-content-center align-items-center animate__animated d-none" role="tabPanel" style="width: 100vw; height: 100vh; top: 0px; right: 0px;">
-                <div class="card rounded-5 p-4 border-0 d-flex flex-column justify-content-between align-items-center" style="box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.25); height: 80vh; width: 80vw;">
+            <div class="anim-wrapper position-fixed d-flex justify-content-center align-items-center animate__animated d-none"
+                role="tabPanel" style="width: 100vw; height: 100vh; top: 0px; right: 0px;">
+                <div class="card rounded-5 p-4 border-0 d-flex flex-column justify-content-between align-items-center"
+                    style="box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.25); height: 80vh; width: 80vw;">
                     <img src="../public/img/gofret_logo.webp" alt="logo" style="width: 40vw; max-width: 150px;">
                     <div class="content px-3" style="max-width: 300px;">
-                        <h3 class="fs-21 fw-bold text-dark-pink text-center mb-3">Görünüşe göre sadece öğretmek istiyorsun.</h3>
-                        <p class="fs-12 fw-medium text-dark-pink mb-3 ">Öncelikle bu harika! Şimdi kategorini seç.</p>
+                        <h3 class="fs-21 fw-bold text-dark-pink text-center mb-3">Görünüşe göre kendine yeni şeyler katmak istiyorsun.</h3>
+                        <p class="fs-12 fw-medium text-dark-pink mb-3 ">Bunu görmek harika! Şimdi kategorini seç. Ya da önerilenlerden seçim yap!</p>
                         <div class="w-100">
                             <p class="w-100 fs-12 text-gray my-1" style="text-align: center; ">Ana kategori</p>
                             <div class="w-100 d-flex align-items-center mb-3 justify-content-center">
-                                <select name="" id="" class="w-75 rounded-4 text-light-tertiary text-border-other-tertiary-color">
-                                
+                                <select name="" id=""
+                                    class="w-75 rounded-4 text-light-tertiary text-border-other-tertiary-color">
+
                                 </select>
 
                             </div>
@@ -167,41 +221,47 @@
                         <div>
                             <p class="w-100 fs-12 text-gray my-1" style="text-align: center;">Alt kategori</p>
                             <div class="w-100 d-flex mb-3 align-items-center justify-content-center">
-                                <select name="" id="" class="w-75 rounded-4 text-light-secondary text-border-other-secondary-color">
-                                
+                                <select name="" id=""
+                                    class="w-75 rounded-4 text-light-secondary text-border-other-secondary-color">
+
                                 </select>
 
                             </div>
+                        </div>
+                        <div>
+                            <p class="text-dark-pink fs-14">Bu ay önerilen takaslar:</p>
                         </div>
                     </div>
                     <div class="card-footer p-0 w-100 border-0 bg-transparent pt-1">
                         <div class="multi-step d-flex justify-content-center mb-2 pt-1">
                             <svg class="" xmlns="http://www.w3.org/2000/svg">
-                            <rect rx="4" />
-                        </svg>
+                                <rect rx="4" />
+                            </svg>
 
                             <svg class="" xmlns="http://www.w3.org/2000/svg">
-                            <rect rx="4"/>
-                        </svg>
+                                <rect rx="4" />
+                            </svg>
 
                             <svg class="current" xmlns="http://www.w3.org/2000/svg">
-                            <rect rx="4" />
-                        </svg>
+                                <rect rx="4" />
+                            </svg>
 
                             <svg class="" xmlns="http://www.w3.org/2000/svg">
-                            <rect rx="4" />
-                        </svg>
+                                <rect rx="4" />
+                            </svg>
                         </div>
                         <div class="btn btn-dark-pink">Haydi Başlayalım!</div>
                     </div>
                 </div>
             </div>
-            <div class="anim-wrapper position-fixed d-flex justify-content-center align-items-center animate__animated d-none" role="tabPanel" style="width: 100vw; height: 100vh; top: 0px; right: 0px;">
-                <div class="card rounded-5 p-4 border-0 d-flex flex-column justify-content-between align-items-center" style="box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.25); height: 80vh; width: 80vw;">
+            <div class="anim-wrapper position-fixed d-flex justify-content-center align-items-center animate__animated d-none"
+                role="tabPanel" style="width: 100vw; height: 100vh; top: 0px; right: 0px;">
+                <div class="card rounded-5 p-4 border-0 d-flex flex-column justify-content-between align-items-center"
+                    style="box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.25); height: 80vh; width: 80vw;">
                     <img src="../public/img/gofret_logo.webp" alt="logo" style="width: 40vw; max-width: 150px;">
                     <div class="content px-3" style="max-width: 300px;">
                         <h3 class="fs-21 fw-bold text-dark-pink text-center mb-3">Harika! Şimdi de seçimini yap.</h3>
-                        <p class="fs-14 fw-medium text-dark-pink mb-3">Paylaşma isteğine hayran kaldık. Şimdi ise öğreteceğin platformu seçmelisin.</p>
+                        <p class="fs-14 fw-medium text-dark-pink mb-3">Öğrenme isteğine hayran kaldık. Şimdi ise öğreteceğin platformu seçmelisin.</p>
                         <div class="w-100 d-flex  justify-content-start align-items-center">
                             <div class="w-25">
 
@@ -234,74 +294,123 @@
                             </div>
 
                         </div>
-                        <div>
-                            <p class="mb-2 fs-14 text-dark-pink">Tabii ne kadar süreceğini de.</p>
-                            <div class="p-2 rounded-3 w-100 bg-color-yellow text-border-dark-pink-color d-flex justify-content-start align-items-center" style="height:15vw">
-                                <p class="fs-13 " style="width: max-content;">Tahmini süre:</p>
-                                <input type="text" class="w-50 bg-color-yellow text-border-yellow-color">
-
-
-                            </div>
-                        </div>
+                        
                     </div>
                     <div class="card-footer p-0 w-100 border-0 bg-transparent pt-1">
                         <div class="multi-step d-flex justify-content-center mb-2 pt-1">
                             <svg class="" xmlns="http://www.w3.org/2000/svg">
-                            <rect rx="4" />
-                        </svg>
+                                <rect rx="4" />
+                            </svg>
 
                             <svg class="" xmlns="http://www.w3.org/2000/svg">
-                            <rect rx="4"/>
-                        </svg>
+                                <rect rx="4" />
+                            </svg>
 
                             <svg class="current" xmlns="http://www.w3.org/2000/svg">
-                            <rect rx="4" />
-                        </svg>
+                                <rect rx="4" />
+                            </svg>
 
                             <svg class="" xmlns="http://www.w3.org/2000/svg">
-                            <rect rx="4" />
-                        </svg>
+                                <rect rx="4" />
+                            </svg>
                         </div>
                         <div class="btn btn-dark-pink">Haydi Başlayalım!</div>
                     </div>
                 </div>
             </div>
-            <div class="anim-wrapper position-fixed d-flex justify-content-center align-items-center animate__animated d-none" role="tabPanel" style="width: 100vw; height: 100vh; top: 0px; right: 0px;">
-                <div class="card rounded-5 p-4 border-0 d-flex flex-column justify-content-between align-items-center" style="box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.25); height: 80vh; width: 80vw;">
+            <div class="anim-wrapper position-fixed d-flex justify-content-center align-items-center animate__animated d-none"
+                role="tabPanel" style="width: 100vw; height: 100vh; top: 0px; right: 0px;">
+                <div class="card rounded-5 p-4 border-0 d-flex flex-column justify-content-between align-items-center"
+                    style="box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.25); height: 80vh; width: 80vw;">
                     <img src="../public/img/gofret_logo.webp" alt="logo" style="width: 40vw; max-width: 150px;">
                     <div class="content px-3" style="max-width: 300px;">
                         <h3 class="fs-21 fw-bold text-dark-pink text-center mb-3">İyi gidiyorsun!</h3>
-                        <p class="fs-12 fw-medium text-dark-pink mb-3 ">Şimdi neler öğreteceğini yazma zamanı!</p>
-                        <div class="w-100 d-flex justify-content-center align-items-center mb-3" style="height: max-content;">
-                            <div class="rounded-4 card me-1 bg-color-gray" style="width: 2vw;display: block; background-color: red; height:150px;">
+                        <p class="fs-12 fw-medium text-dark-pink mb-3 ">Ama sadece öğretmek istediğine emin misin?
+                            Envanterinden bir ders seçerek takas oluşturabilirsin!</p>
+                        <div class="w-100 d-flex justify-content-center align-items-center mb-3"
+                            style="height: max-content;">
+                            
+                                <div class="p-2 rounded-3 w-100 bg-color-yellow text-border-dark-pink-color d-flex justify-content-start align-items-center"
+                                    style="height:15vw">
+                                    
+                                    <p>Envanterin</p>
+                                    <div class="p-2 rounded-3 w-75 bg-color-yellow text-border-dark-pink-color d-flex justify-content-start align-items-center"
+                                    style="height:5vw">
 
-                            </div>
-                            <div>
-                                <p class="fs-20 text-dark-pink fw-bold">Hafta 1</p>
-                                <p class="fs-12 text-dark-pink">Örnek</p>
-                                <ul>
-                                    <li class="fs-12 text-dark-pink">Kivi hangi topraklara dikilir, nerede yetişir.</li>
-                                    <li class="fs-12 text-dark-pink">Kivi nasıl büyür, bakımı nasıl yapılır?</li>
-                                </ul>
 
-                            </div>
+
+                                    </div>
+
+
+
+                                </div>
+                            
 
 
                         </div>
-                        <div class="w-100 d-flex justify-content-start align-items-center" style="height: max-content;">
-                            <div class="rounded-4 card me-1 bg-color-gray" style="width: 1.5vw;display: block; background-color: red; height:75px;">
+                        
+
+                    </div>
+                    <div class="card-footer p-0 w-100 border-0 bg-transparent pt-1">
+                        <div class="multi-step d-flex justify-content-center mb-2 pt-1">
+                            <svg class="" xmlns="http://www.w3.org/2000/svg">
+                                <rect rx="4" />
+                            </svg>
+
+                            <svg class="" xmlns="http://www.w3.org/2000/svg">
+                                <rect rx="4" />
+                            </svg>
+
+                            <svg class="current" xmlns="http://www.w3.org/2000/svg">
+                                <rect rx="4" />
+                            </svg>
+
+                            <svg class="" xmlns="http://www.w3.org/2000/svg">
+                                <rect rx="4" />
+                            </svg>
+                        </div>
+                        <div class="btn btn-dark-pink">Haydi Başlayalım!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="anim-wrapper position-fixed d-flex justify-content-center align-items-center animate__animated d-none"
+                role="tabPanel" style="width: 100vw; height: 100vh; top: 0px; right: 0px;">
+                <div class="card rounded-5 p-4 border-0 d-flex flex-column justify-content-between align-items-center"
+                    style="box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.25); height: 80vh; width: 80vw;">
+                    <img src="../public/img/gofret_logo.webp" alt="logo" style="width: 40vw; max-width: 150px;">
+                    <div class="content px-3" style="max-width: 300px;">
+                        <h3 class="fs-21 fw-bold text-dark-pink text-center mb-3">Detayları da belirleyelim.</h3>
+                        <p class="fs-12 fw-medium text-dark-pink mb-3 ">Ufak bir açıklama ve güzel bir kapak fotoğrafına
+                            kim hayır der ki?</p>
+                        <div class="w-100 d-flex justify-content-end align-items-center">
+                            <div class="card bg-tertiary w-100 mb-5">
+                                <p class="fs-13 text-light">Spor yapıyorum, pilav yapmayı öğretebilirim.</p>
 
                             </div>
-                            <div>
-                                <p class="fs-20 text-dark-pink fw-bold">Hafta 2</p>
+                            <i class="fa-solid fa-angle-right fs-1 text-light-green-color"></i>
 
-                                <ul>
-                                    <li class="fs-12 text-dark-pink">Kivi satışı nasıl yapılır?</li>
-                                    <li class="fs-12 text-dark-pink">Nasıl Toplanır?</li>
-                                </ul>
+                        </div>
+
+
+
+
+                        <div class="w-100">
+                            <div class="w-100 d-flex justify-content-center align-items-center">
+                                <p class="fs-15 text-dark-pink">Kaç Gofret verebilirsin?</p>
+                            </div>
+                            <div class="w-100 d-flex justify-content-center align-items-center">
+                                <input type=button class="fs-20 bg-color-white bg-color-white" onclick="azalt()"
+                                    value="-">
+                                <input type=button id="sonuc" class="fw-bold fs-24 text-light-green-secondary-color bg-color-white "
+                                    value="10">
+                                <input type=button class="fs-20 bg-color-white" onclick="arttir()" value="+">
+
+
 
                             </div>
-
+                            <div class="w-100 d-flex justify-content-center align-items-center">
+                                <p class="fs-12 text-gray">Önerilen: 10</p>
+                            </div>
 
                         </div>
 
@@ -309,30 +418,33 @@
                     <div class="card-footer p-0 w-100 border-0 bg-transparent pt-1">
                         <div class="multi-step d-flex justify-content-center mb-2 pt-1">
                             <svg class="" xmlns="http://www.w3.org/2000/svg">
-                            <rect rx="4" />
-                        </svg>
+                                <rect rx="4" />
+                            </svg>
 
                             <svg class="" xmlns="http://www.w3.org/2000/svg">
-                            <rect rx="4"/>
-                        </svg>
+                                <rect rx="4" />
+                            </svg>
 
                             <svg class="current" xmlns="http://www.w3.org/2000/svg">
-                            <rect rx="4" />
-                        </svg>
+                                <rect rx="4" />
+                            </svg>
 
                             <svg class="" xmlns="http://www.w3.org/2000/svg">
-                            <rect rx="4" />
-                        </svg>
+                                <rect rx="4" />
+                            </svg>
                         </div>
                         <div class="btn btn-dark-pink">Haydi Başlayalım!</div>
                     </div>
                 </div>
             </div>
+            
 
 
 
-    </div>
-    </form>
+            </div>
+            
+        </form>
+        
     </div>
 
 
@@ -341,12 +453,12 @@
     <script src="../public/js/fa.min.js "></script>
     <script>
         var stepIndex = 0;
-        $(document).ready(function() {
+        $(document).ready(function () {
             //body background bg-light-secondary
             $('body').addClass('bg-light-secondary');
             const steps = $('[role="tabPanel"]');
             //if btn clicked next step
-            $('.btn').click(function() {
+            $('.btn').click(function () {
                 if (stepIndex < steps.length - 1) {
                     steps.eq(stepIndex).removeClass('animate__fadeInRight');
                     steps.eq(stepIndex).addClass('animate__fadeOutLeft');
@@ -357,7 +469,19 @@
                 }
             });
         });
+        function arttir() {
+
+            var sonuc = document.getElementById("sonuc");
+            sonuc.value = Number(sonuc.value) + 1;
+        }
+
+        function azalt() {
+
+            var sonuc = document.getElementById("sonuc");
+            sonuc.value = Number(sonuc.value) - 1;
+        }
     </script>
+
 </body>
 
 </html>
