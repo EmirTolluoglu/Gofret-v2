@@ -131,6 +131,14 @@
   border: 3px solid #29D3A0 !important;
 }
 
+.text-border-dark-pink-color {
+  border: 3px solid #471D4C !important;
+}
+
+.text-border-yellow-color {
+  border: 3px solid #471D4C !important;
+}
+
 .bg-primary {
   background-color: #501A7A !important;
 }
@@ -153,6 +161,14 @@
 
 .bg-light-tertiary {
   background-color: #FFC1F2 !important;
+}
+
+.bg-color-yellow {
+  background-color: #FFF59A !important;
+}
+
+.bg-color-gray {
+  background-color: #D0D5DD !important;
 }
 
 * {

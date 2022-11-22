@@ -18,5 +18,12 @@ router.get('/profile', (req, res) => {
     res.render('profile', { title: 'Profile' });
 });
 
+router.get('/drive', (req, res) => {
+    res.render('profile');
+});
+
+router.get('/sign-up', (req, res) => {
+    res.render('sign-up', { title: 'Gofret | Sign-up', layout: 'multi-step-form' });
+});
 
 module.exports = router;
