@@ -111,7 +111,11 @@
 }
 
 .text-dark-pink {
-    color: $dark-pink-color;
+    color: $dark-pink-color  !important;
+}
+
+.text-light-green-color{
+    color: $light-green-color !important;
 }
 
 .text-light-secondary {
@@ -132,4 +136,11 @@
 
 .text-border-dark-pink-color {
     border: 3px solid $dark-pink-color !important;
+}
+.text-border-white{
+    border: 1px solid $white !important;
+}
+
+.text-light-green-secondary-color{
+    color: $light-green-secondary-color !important;
 }
