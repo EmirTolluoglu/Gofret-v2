@@ -71,26 +71,6 @@
   font-size: 1.563rem;
 }
 
-.fs-26 {
-  font-size: 1.625rem;
-}
-
-.fs-27 {
-  font-size: 1.688rem;
-}
-
-.fs-28 {
-  font-size: 1.75rem;
-}
-
-.fs-29 {
-  font-size: 1.813rem;
-}
-
-.fs-30 {
-  font-size: 1.875rem;
-}
-
 .text-primary {
   color: #501A7A !important;
 }
@@ -132,7 +112,11 @@
 }
 
 .text-dark-pink {
-  color: #471D4C;
+  color: #471D4C !important;
+}
+
+.text-light-green-color {
+  color: #69A596 !important;
 }
 
 .text-light-secondary {
@@ -155,8 +139,12 @@
   border: 3px solid #471D4C !important;
 }
 
-.fw-thin {
-  font-weight: 100 !important;
+.text-border-white {
+  border: 1px solid #FFFFFF !important;
+}
+
+.text-light-green-secondary-color {
+  color: #69A596 !important;
 }
 
 .bg-primary {
@@ -189,6 +177,10 @@
 
 .bg-color-gray {
   background-color: #D0D5DD !important;
+}
+
+.bg-color-white {
+  background-color: #FFFFFF !important;
 }
 
 * {
