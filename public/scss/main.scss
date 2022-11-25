@@ -1,18 +1,19 @@
-@import '_variables';
-@import '_font';
-@import '_background';
-@import '_reset';
-@import '_buttons';
-@import '_paths';
+@import "_variables";
+@import "_font";
+@import "_background";
+@import "_reset";
+@import "_buttons";
+@import "_paths";
 .rounded-4-5 {
     border-radius: 1.35rem !important;
 }
 
 header {
-    background-color: $background-color-light;
+    background-color: transparent;
     .has-search .form-control {
-        padding-left: 2.375rem;
-        background-color: #E4E4E4;
+        padding-left: 2.375rem !important;
+        background-color: #fff;
+        border: 2px $light-tertiary-color solid;
     }
     .has-search .form-control-feedback {
         position: absolute;
@@ -28,7 +29,7 @@ nav {
     background-color: $background-color-light !important;
 }
 
-main#explore {
+#explore {
     &.ogren {
         .btn-ogren {
             @extend .btn-light-secondary;
@@ -37,57 +38,97 @@ main#explore {
             @extend .btn-primary-transparent;
         }
         #shape-banner {
+            svg {
+                transition: all 0.6s ease-in;
+                z-index: -1;
+            }
             .shape-first {
-                background-color: $light-secondary-color !important;
-                transition: all .2s ease-in;
+                background-color: #8abfa3 !important;
+                color: $white;
+                transition: all 0.6s ease-in;
+                .banner-text {
+                    color: $white;
+                    transition: all 0.6s ease-in;
+                }
+                .leftTop {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    path {
+                        transition: all 0.6s ease-in;
+                        fill: #ffc1f2;
+                    }
+                }
+                .rightTop {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    path {
+                        transition: all 0.6s ease-in;
+                        fill: #69a596;
+                    }
+                }
+                .middleBottom {
+                    position: absolute;
+                    bottom: 0;
+                    left: 20vw;
+                    path {
+                        transition: all 0.6s ease-in;
+                        fill: #cd8bbf;
+                    }
+                }
             }
             .shape-second {
                 background-color: $light-tertiary-color !important;
-                transition: all .2s ease-in;
+                transition: all 0.6s ease-in;
+            }
+            .shpae-third {
+                background-color: $white !important;
+                transition: all 0.2s ease-in;
             }
         }
         .card {
             background-color: $white !important;
-            transition: all .2s ease-in;
+            transition: all 0.2s ease-in;
             .card-top {
                 background-color: $light-secondary-color !important;
-                transition: all .2s ease-in;
+                transition: all 0.2s ease-in;
             }
             .card-body {
                 .content {
                     .category {
                         h4 {
                             color: $font-color-dark !important;
-                            transition: all .2s ease-in;
+                            transition: all 0.2s ease-in;
                         }
                         i {
                             color: $font-color-medium !important;
-                            transition: all .2s ease-in;
+                            transition: all 0.2s ease-in;
                         }
                         h5 {
                             color: $font-color-medium2 !important;
-                            transition: all .2s ease-in;
+                            transition: all 0.2s ease-in;
                         }
                     }
                     p {
                         color: $font-color-gray !important;
-                        transition: all .2s ease-in;
+                        transition: all 0.2s ease-in;
                     }
                 }
                 .other {
                     .level {
                         background-color: $other-secondary-color !important;
-                        transition: all .2s ease-in;
+                        transition: all 0.2s ease-in;
                         color: $white !important;
                     }
                     .price {
                         svg {
                             fill: $black !important;
-                            transition: all .2s ease-in;
+                            transition: all 0.2s ease-in;
                         }
                         p {
                             color: $font-color-dark !important;
-                            transition: all .2s ease-in;
+                            transition: all 0.2s ease-in;
                         }
                     }
                 }
@@ -97,62 +138,103 @@ main#explore {
     &.ogret {
         .btn-ogren {
             @extend .btn-primary-transparent;
+            background-color: transparent !important;
         }
         .btn-ogret {
             @extend .btn-light-tertiary;
         }
         #shape-banner {
             .shape-first {
-                background-color: $light-tertiary-color !important;
-                transition: all .2s ease-in;
+                .banner-text {
+                    color: $dark-pink-color !important;
+                    transition: all 0.6s ease-in;
+                }
+                color: $dark-pink-color !important;
+                background-color: #ffc1f2 !important;
+                transition: all 0.6s ease-in;
+                svg {
+                    transition: all 0.6s ease-in;
+                    z-index: -1;
+                }
+                .leftTop {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    path {
+                        transition: all 0.6s ease-in;
+                        fill: #b9ffea;
+                    }
+                }
+                .rightTop {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    path {
+                        transition: all 0.6s ease-in;
+                        fill: #cd8bbf;
+                    }
+                }
+                .middleBottom {
+                    position: absolute;
+                    bottom: 0;
+                    left: 20vw;
+                    path {
+                        transition: all 0.6s ease-in;
+                        fill: #8abfa3;
+                    }
+                }
             }
             .shape-second {
                 background-color: $light-secondary-color !important;
-                transition: all .2s ease-in;
+                transition: all 0.2s ease-in;
+            }
+            .shpae-third {
+                background-color: $light-secondary-color !important;
+                transition: all 0.2s ease-in;
             }
         }
         .card {
             background-color: $light-tertiary-color !important;
-            transition: all .2s ease-in;
+            transition: all 0.2s ease-in;
             .card-top {
                 background-color: $white !important;
-                transition: all .2s ease-in;
+                transition: all 0.2s ease-in;
             }
             .card-body {
                 .content {
                     .category {
                         h4 {
                             color: $dark-pink-color !important;
-                            transition: all .2s ease-in;
+                            transition: all 0.2s ease-in;
                         }
                         i {
                             color: $dark-pink-color !important;
-                            transition: all .2s ease-in;
+                            transition: all 0.2s ease-in;
                         }
                         h5 {
                             color: $dark-pink-color !important;
-                            transition: all .2s ease-in;
+                            transition: all 0.2s ease-in;
                         }
                     }
                     p {
                         color: $font-color-medium !important;
-                        transition: all .2s ease-in;
+                        transition: all 0.2s ease-in;
                     }
                 }
                 .other {
                     .level {
-                        background-color: #B782AC !important;
-                        transition: all .2s ease-in;
+                        background-color: #b782ac !important;
+                        transition: all 0.2s ease-in;
                         color: $light-tertiary-color !important;
                     }
                     .price {
                         svg {
                             fill: $dark-pink-color !important;
-                            transition: all .2s ease-in;
+                            transition: all 0.2s ease-in;
                         }
                         p {
                             color: $dark-pink-color !important;
-                            transition: all .2s ease-in;
+                            transition: all 0.2s ease-in;
                         }
                     }
                 }
@@ -176,17 +258,98 @@ main#explore {
     align-items: center;
     .pill {
         margin: 0.3rem;
-        background-color: #CDFFF0 !important;
+        background-color: #cdfff0 !important;
         color: $font-color-dark !important;
         border: 2px solid $other-secondary-color !important;
         border-radius: 0.7rem !important;
         padding: 5px 10px;
-        transition: all .2s ease-in;
+        transition: all 0.2s ease-in;
         &.active {
             background-color: $primary-color !important;
             color: $white !important;
             border: 2px solid $dark-pink-color !important;
-            transition: all .2s ease-in;
+            transition: all 0.2s ease-in;
+        }
+    }
+}
+
+.the-o {
+    /* infinite rotate anim*/
+    animation: spin 2s linear infinite;
+}
+
+#calendar {
+    .months {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+        margin-bottom: 0.6rem;
+        .month-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $other-secondary-color;
+            padding: 0.5rem 0rem;
+            width: 100%;
+            border-radius: 0.5rem 0.5rem;
+            color: $white;
+            font-weight: $font-weight-medium;
+            font-size: 20px;
+        }
+    }
+    .weeks {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 0.5rem;
+        margin-bottom: 1rem;
+        .week-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $light-secondary-color;
+            width: 100%;
+            border-radius: 0.3rem 0.3rem;
+            color: $dark-pink-color;
+            font-weight: $font-weight-medium;
+            font-size: 15px;
+            padding: 0.3rem 0rem;
+            &.active {
+                background-color: $primary-color;
+                color: $white;
+            }
+        }
+    }
+    .weekdays {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-gap: 0.5rem;
+        background-color: #ECC3E3;
+        border-radius: 10px;
+        .weekday-item-top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            border-radius: 0.3rem 0.3rem;
+            color: $dark-pink-color;
+            font-weight: $font-weight-medium;
+            font-size: 15px;
+            padding: 0.3rem 0rem;
+        }
+        .weekday-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            border-radius: 0.3rem 0.3rem;
+            color: $dark-pink-color;
+            font-weight: $font-weight-medium;
+            font-size: 15px;
+            padding: 0.3rem 0rem;
+            &.active {
+                background-color: $primary-color;
+                color: $white;
+            }
         }
     }
 }

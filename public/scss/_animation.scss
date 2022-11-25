@@ -5,3 +5,13 @@
     -o-animation: move-center $duration $timing $delay;
     animation: move-center $duration $timing $delay;
 }
+
+@keyframes spin {
+    /* ease spim */
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
