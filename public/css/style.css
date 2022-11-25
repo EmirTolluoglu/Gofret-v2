@@ -175,12 +175,20 @@
   background-color: #FFF59A !important;
 }
 
+.bg-color-medium {
+  background-color: #733A67 in !important;
+}
+
 .bg-color-gray {
   background-color: #D0D5DD !important;
 }
 
 .bg-color-white {
   background-color: #FFFFFF !important;
+}
+
+.bg-light-tertiary-green-color {
+  background-color: #B9FFEA !important;
 }
 
 * {
@@ -558,7 +566,7 @@ nav {
   grid-template-columns: repeat(7, 1fr);
   grid-gap: 0.5rem;
   background-color: #ECC3E3;
-  border-radius: 0.5rem 0.5rem;
+  border-radius: 10px;
 }
 #calendar .weekdays .weekday-item-top {
   display: flex;
