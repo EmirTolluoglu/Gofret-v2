@@ -71,26 +71,6 @@
   font-size: 1.563rem;
 }
 
-.fs-26 {
-  font-size: 1.625rem;
-}
-
-.fs-27 {
-  font-size: 1.688rem;
-}
-
-.fs-28 {
-  font-size: 1.75rem;
-}
-
-.fs-29 {
-  font-size: 1.813rem;
-}
-
-.fs-30 {
-  font-size: 1.875rem;
-}
-
 .text-primary {
   color: #501A7A !important;
 }
@@ -132,7 +112,11 @@
 }
 
 .text-dark-pink {
-  color: #471D4C;
+  color: #471D4C !important;
+}
+
+.text-light-green-color {
+  color: #69A596 !important;
 }
 
 .text-light-secondary {
@@ -155,8 +139,12 @@
   border: 3px solid #471D4C !important;
 }
 
-.fw-thin {
-  font-weight: 100 !important;
+.text-border-white {
+  border: 1px solid #FFFFFF !important;
+}
+
+.text-light-green-secondary-color {
+  color: #69A596 !important;
 }
 
 .bg-primary {
@@ -191,6 +179,10 @@
   background-color: #D0D5DD !important;
 }
 
+.bg-color-white {
+  background-color: #FFFFFF !important;
+}
+
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -198,7 +190,7 @@
 body {
   overflow-x: hidden;
   transition: all 0.2s ease-in;
-  background-color: #F0F0F5 !important;
+  background-color: #FFFFFF !important;
 }
 
 .d-none {
@@ -218,7 +210,7 @@ h6 {
   margin: 0;
 }
 
-.btn-light-secondary, main#explore.ogren .btn-ogren {
+.btn-light-secondary, #explore.ogren .btn-ogren {
   background-color: #B9FFEA;
   color: #29D3A0;
   border: 2px solid #29D3A0;
@@ -247,12 +239,13 @@ h6 {
   }
 }
 
-.btn-primary-transparent, main#explore.ogret .btn-ogren, main#explore.ogren .btn-ogret {
+.btn-primary-transparent, #explore.ogret .btn-ogren, #explore.ogren .btn-ogret {
   border: 2px solid #501A7A;
   color: #501A7A;
+  background-color: transparent !important;
 }
 
-.btn-light-tertiary, main#explore.ogret .btn-ogret {
+.btn-light-tertiary, #explore.ogret .btn-ogret {
   background-color: #FFC1F2;
   color: #BA62A7;
   border: 2px solid #BA62A7;
@@ -291,11 +284,12 @@ h6 {
 }
 
 header {
-  background-color: #F0F0F5;
+  background-color: transparent;
 }
 header .has-search .form-control {
-  padding-left: 2.375rem;
-  background-color: #E4E4E4;
+  padding-left: 2.375rem !important;
+  background-color: #fff;
+  border: 2px #FFC1F2 solid;
 }
 header .has-search .form-control-feedback {
   position: absolute;
@@ -310,93 +304,176 @@ nav {
   background-color: #F0F0F5 !important;
 }
 
-main#explore.ogren #shape-banner .shape-first {
-  background-color: #B9FFEA !important;
-  transition: all 0.2s ease-in;
+#explore.ogren #shape-banner svg {
+  transition: all 0.6s ease-in;
+  z-index: -1;
 }
-main#explore.ogren #shape-banner .shape-second {
+#explore.ogren #shape-banner .shape-first {
+  background-color: #8abfa3 !important;
+  color: #FFFFFF;
+  transition: all 0.6s ease-in;
+}
+#explore.ogren #shape-banner .shape-first .banner-text {
+  color: #FFFFFF;
+  transition: all 0.6s ease-in;
+}
+#explore.ogren #shape-banner .shape-first .leftTop {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#explore.ogren #shape-banner .shape-first .leftTop path {
+  transition: all 0.6s ease-in;
+  fill: #ffc1f2;
+}
+#explore.ogren #shape-banner .shape-first .rightTop {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#explore.ogren #shape-banner .shape-first .rightTop path {
+  transition: all 0.6s ease-in;
+  fill: #69a596;
+}
+#explore.ogren #shape-banner .shape-first .middleBottom {
+  position: absolute;
+  bottom: 0;
+  left: 20vw;
+}
+#explore.ogren #shape-banner .shape-first .middleBottom path {
+  transition: all 0.6s ease-in;
+  fill: #cd8bbf;
+}
+#explore.ogren #shape-banner .shape-second {
   background-color: #FFC1F2 !important;
-  transition: all 0.2s ease-in;
+  transition: all 0.6s ease-in;
 }
-main#explore.ogren .card {
+#explore.ogren #shape-banner .shpae-third {
   background-color: #FFFFFF !important;
   transition: all 0.2s ease-in;
 }
-main#explore.ogren .card .card-top {
+#explore.ogren .card {
+  background-color: #FFFFFF !important;
+  transition: all 0.2s ease-in;
+}
+#explore.ogren .card .card-top {
   background-color: #B9FFEA !important;
   transition: all 0.2s ease-in;
 }
-main#explore.ogren .card .card-body .content .category h4 {
+#explore.ogren .card .card-body .content .category h4 {
   color: #3F414E !important;
   transition: all 0.2s ease-in;
 }
-main#explore.ogren .card .card-body .content .category i {
+#explore.ogren .card .card-body .content .category i {
   color: #733A67 !important;
   transition: all 0.2s ease-in;
 }
-main#explore.ogren .card .card-body .content .category h5 {
+#explore.ogren .card .card-body .content .category h5 {
   color: #963B8E !important;
   transition: all 0.2s ease-in;
 }
-main#explore.ogren .card .card-body .content p {
+#explore.ogren .card .card-body .content p {
   color: #7D7D7D !important;
   transition: all 0.2s ease-in;
 }
-main#explore.ogren .card .card-body .other .level {
+#explore.ogren .card .card-body .other .level {
   background-color: #29D3A0 !important;
   transition: all 0.2s ease-in;
   color: #FFFFFF !important;
 }
-main#explore.ogren .card .card-body .other .price svg {
+#explore.ogren .card .card-body .other .price svg {
   fill: #000000 !important;
   transition: all 0.2s ease-in;
 }
-main#explore.ogren .card .card-body .other .price p {
+#explore.ogren .card .card-body .other .price p {
   color: #3F414E !important;
   transition: all 0.2s ease-in;
 }
-main#explore.ogret #shape-banner .shape-first {
-  background-color: #FFC1F2 !important;
-  transition: all 0.2s ease-in;
+#explore.ogret .btn-ogren {
+  background-color: transparent !important;
 }
-main#explore.ogret #shape-banner .shape-second {
+#explore.ogret #shape-banner .shape-first {
+  color: #471D4C !important;
+  background-color: #ffc1f2 !important;
+  transition: all 0.6s ease-in;
+}
+#explore.ogret #shape-banner .shape-first .banner-text {
+  color: #471D4C !important;
+  transition: all 0.6s ease-in;
+}
+#explore.ogret #shape-banner .shape-first svg {
+  transition: all 0.6s ease-in;
+  z-index: -1;
+}
+#explore.ogret #shape-banner .shape-first .leftTop {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#explore.ogret #shape-banner .shape-first .leftTop path {
+  transition: all 0.6s ease-in;
+  fill: #b9ffea;
+}
+#explore.ogret #shape-banner .shape-first .rightTop {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#explore.ogret #shape-banner .shape-first .rightTop path {
+  transition: all 0.6s ease-in;
+  fill: #cd8bbf;
+}
+#explore.ogret #shape-banner .shape-first .middleBottom {
+  position: absolute;
+  bottom: 0;
+  left: 20vw;
+}
+#explore.ogret #shape-banner .shape-first .middleBottom path {
+  transition: all 0.6s ease-in;
+  fill: #8abfa3;
+}
+#explore.ogret #shape-banner .shape-second {
   background-color: #B9FFEA !important;
   transition: all 0.2s ease-in;
 }
-main#explore.ogret .card {
+#explore.ogret #shape-banner .shpae-third {
+  background-color: #B9FFEA !important;
+  transition: all 0.2s ease-in;
+}
+#explore.ogret .card {
   background-color: #FFC1F2 !important;
   transition: all 0.2s ease-in;
 }
-main#explore.ogret .card .card-top {
+#explore.ogret .card .card-top {
   background-color: #FFFFFF !important;
   transition: all 0.2s ease-in;
 }
-main#explore.ogret .card .card-body .content .category h4 {
+#explore.ogret .card .card-body .content .category h4 {
   color: #471D4C !important;
   transition: all 0.2s ease-in;
 }
-main#explore.ogret .card .card-body .content .category i {
+#explore.ogret .card .card-body .content .category i {
   color: #471D4C !important;
   transition: all 0.2s ease-in;
 }
-main#explore.ogret .card .card-body .content .category h5 {
+#explore.ogret .card .card-body .content .category h5 {
   color: #471D4C !important;
   transition: all 0.2s ease-in;
 }
-main#explore.ogret .card .card-body .content p {
+#explore.ogret .card .card-body .content p {
   color: #733A67 !important;
   transition: all 0.2s ease-in;
 }
-main#explore.ogret .card .card-body .other .level {
-  background-color: #B782AC !important;
+#explore.ogret .card .card-body .other .level {
+  background-color: #b782ac !important;
   transition: all 0.2s ease-in;
   color: #FFC1F2 !important;
 }
-main#explore.ogret .card .card-body .other .price svg {
+#explore.ogret .card .card-body .other .price svg {
   fill: #471D4C !important;
   transition: all 0.2s ease-in;
 }
-main#explore.ogret .card .card-body .other .price p {
+#explore.ogret .card .card-body .other .price p {
   color: #471D4C !important;
   transition: all 0.2s ease-in;
 }
@@ -417,7 +494,7 @@ main#explore.ogret .card .card-body .other .price p {
 }
 .interests .pill {
   margin: 0.3rem;
-  background-color: #CDFFF0 !important;
+  background-color: #cdfff0 !important;
   color: #3F414E !important;
   border: 2px solid #29D3A0 !important;
   border-radius: 0.7rem !important;
@@ -429,6 +506,85 @@ main#explore.ogret .card .card-body .other .price p {
   color: #FFFFFF !important;
   border: 2px solid #471D4C !important;
   transition: all 0.2s ease-in;
+}
+
+.the-o {
+  /* infinite rotate anim*/
+  animation: spin 2s linear infinite;
+}
+
+#calendar .months {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+#calendar .months .month-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #29D3A0;
+  padding: 0.5rem 0rem;
+  width: 100%;
+  border-radius: 0.5rem 0.5rem;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 20px;
+}
+#calendar .weeks {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+#calendar .weeks .week-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #B9FFEA;
+  width: 100%;
+  border-radius: 0.3rem 0.3rem;
+  color: #471D4C;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 0.3rem 0rem;
+}
+#calendar .weeks .week-item.active {
+  background-color: #501A7A;
+  color: #FFFFFF;
+}
+#calendar .weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 0.5rem;
+  background-color: #ECC3E3;
+  border-radius: 0.5rem 0.5rem;
+}
+#calendar .weekdays .weekday-item-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 0.3rem 0.3rem;
+  color: #471D4C;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 0.3rem 0rem;
+}
+#calendar .weekdays .weekday-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 0.3rem 0.3rem;
+  color: #471D4C;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 0.3rem 0rem;
+}
+#calendar .weekdays .weekday-item.active {
+  background-color: #501A7A;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */
