@@ -279,6 +279,34 @@ nav {
 }
 
 #calendar {
+    .viewport-arrows {
+        position: relative;
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background-color: $white !important;
+            border: 2px solid $other-secondary-color !important;
+            transition: all 0.2s ease-in;
+            &.left {
+                left: 0;
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+            &.right {
+                right: 0;
+            }
+            &:hover {
+                background-color: $primary-color !important;
+                border: 2px solid $dark-pink-color !important;
+                transition: all 0.2s ease-in;
+            }
+        }
+    }
     .months {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -306,6 +334,8 @@ nav {
             display: flex;
             justify-content: center;
             align-items: center;
+            cursor: pointer;
+            user-select: none;
             background-color: $light-secondary-color;
             width: 100%;
             border-radius: 0.3rem 0.3rem;
@@ -313,9 +343,11 @@ nav {
             font-weight: $font-weight-medium;
             font-size: 15px;
             padding: 0.3rem 0rem;
-            &.active {
+            transition: all 0.4s ease-in-out;
+            &.selected {
                 background-color: $primary-color;
                 color: $white;
+                transition: all 0.4s ease-in-out;
             }
         }
     }
@@ -325,30 +357,58 @@ nav {
         grid-gap: 0.5rem;
         background-color: #ECC3E3;
         border-radius: 10px;
+        padding: 0.5rem;
+        position: relative;
+        .selection-cursor {
+            position: absolute;
+            background-color: #ECC3E3;
+            clip-path: polygon(50% 0, 100% 100%, 0 100%);
+            width: 14px;
+            height: 14px;
+            z-index: 2;
+            top: 1px;
+            transform: translateY(-100%);
+            transition: all 0.4s ease-in-out;
+            &.first-selected {
+                left: 7%;
+            }
+            &.second-selected {
+                left: 28%;
+            }
+            &.third-selected {
+                left: 49%;
+            }
+            &.fourth-selected {
+                left: 69%;
+            }
+            &.fifth-selected {
+                left: 89%;
+            }
+        }
         .weekday-item-top {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 100%;
-            border-radius: 0.3rem 0.3rem;
-            color: $dark-pink-color;
-            font-weight: $font-weight-medium;
-            font-size: 15px;
-            padding: 0.3rem 0rem;
+            color: $black;
+            font-size: 12px;
         }
         .weekday-item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             width: 100%;
-            border-radius: 0.3rem 0.3rem;
-            color: $dark-pink-color;
-            font-weight: $font-weight-medium;
-            font-size: 15px;
-            padding: 0.3rem 0rem;
-            &.active {
-                background-color: $primary-color;
-                color: $white;
+            color: $black;
+            padding-bottom: 20px;
+            height: 96px;
+            .weekday-num {
+                font-size: 13px;
+                text-align: center;
+            }
+            .weekday-list {
+                padding: 0;
+                padding-left: 0.6rem;
+                .weekday-to-do {
+                    color: #733A67;
+                    font-size: 7px;
+                }
             }
         }
     }

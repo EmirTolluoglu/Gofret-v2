@@ -46,18 +46,49 @@
                 <p class="fw-light fs-20 text-gray">Verimli vakit geçirmeni diliyoruz.</p>
             </div>
             <div id="calendar" class="mt-4">
+                <div class="viewport-arrows">
+                    <div class="arrow arrow-left">
+                        <i class="fas fa-chevron-left text-light-green-color"></i>
+                    </div>
+                    <div class="arrow arrow-right">
+                        <i class="fas fa-chevron-right text-light-green-color"></i>
+                    </div>
+                </div>
+
                 <div class="months">
                     <div class="month-item">Kasım</div>
                     <div class="month-item">Aralık</div>
                 </div>
                 <div class="weeks">
-                    <div class="week-item">1-14</div>
-                    <div class="week-item">15-27</div>
-                    <div class="week-item">28-9</div>
-                    <div class="week-item">10-21</div>
-                    <div class="week-item">22-31</div>
+                    <div class="week-item">
+                        <span class="first-day"></span>
+                        <span>-</span>
+                        <span class="last-day"></span>
+                    </div>
+                    <div class="week-item">
+                        <span class="first-day"></span>
+                        <span>-</span>
+                        <span class="last-day"></span>
+                    </div>
+                    <div class="week-item">
+                        <span class="first-day"></span>
+                        <span>-</span>
+                        <span class="last-day"></span>
+                    </div>
+                    <div class="week-item">
+                        <span class="first-day"></span>
+                        <span>-</span>
+                        <span class="last-day"></span>
+                    </div>
+                    <div class="week-item">
+                        <span class="first-day"></span>
+                        <span>-</span>
+                        <span class="last-day"></span>
+                    </div>
                 </div>
                 <div class="weekdays">
+                    <div class="selection-cursor first-selected"></div>
+
                     <div class="weekday-item-top">pzt</div>
                     <div class="weekday-item-top">sal</div>
                     <div class="weekday-item-top">çar</div>
@@ -65,20 +96,71 @@
                     <div class="weekday-item-top">cum</div>
                     <div class="weekday-item-top">cmt</div>
                     <div class="weekday-item-top">paz</div>
-                    <div class="weekday-item">1</div>
-                    <div class="weekday-item">2</div>
-                    <div class="weekday-item">3</div>
-                    <div class="weekday-item">4</div>
-                    <div class="weekday-item">5</div>
-                    <div class="weekday-item">6</div>
-                    <div class="weekday-item">7</div>
-                    <div class="weekday-item">8</div>
-                    <div class="weekday-item">9</div>
-                    <div class="weekday-item">10</div>
-                    <div class="weekday-item">11</div>
-                    <div class="weekday-item">12</div>
-                    <div class="weekday-item">13</div>
-                    <div class="weekday-item">14</div>
+                    <div class="weekday-item">
+                        <h6 class="weekday-num"></h6>
+                        <ul class="weekday-list">
+                            <li class="weekday-to-do">kivi ekimi öğren</li>
+                        </ul>
+                    </div>
+                    <div class="weekday-item">
+                        <h6 class="weekday-num"></h6>
+
+                    </div>
+                    <div class="weekday-item">
+                        <h6 class="weekday-num"></h6>
+                        <ul class="weekday-list">
+                            <li class="weekday-to-do">kivi ekimi öğren</li>
+                        </ul>
+                    </div>
+                    <div class="weekday-item">
+                        <h6 class="weekday-num"></h6>
+
+                    </div>
+                    <div class="weekday-item">
+                        <h6 class="weekday-num"></h6>
+                        <ul class="weekday-list">
+                            <li class="weekday-to-do">kivi ekimi öğren</li>
+                        </ul>
+                    </div>
+                    <div class="weekday-item">
+                        <h6 class="weekday-num"></h6>
+
+                    </div>
+                    <div class="weekday-item">
+                        <h6 class="weekday-num"></h6>
+
+                    </div>
+                    <div class="weekday-item">
+                        <h6 class="weekday-num"></h6>
+
+                    </div>
+                    <div class="weekday-item">
+                        <h6 class="weekday-num"></h6>
+
+                    </div>
+                    <div class="weekday-item">
+                        <h6 class="weekday-num"></h6>
+                        <ul class="weekday-list">
+                            <li class="weekday-to-do">kivi ekimi öğren</li>
+                        </ul>
+                    </div>
+                    <div class="weekday-item">
+                        <h6 class="weekday-num"></h6>
+
+                    </div>
+                    <div class="weekday-item">
+                        <h6 class="weekday-num"></h6>
+                        <ul class="weekday-list">
+                            <li class="weekday-to-do">kivi ekimi öğren</li>
+                        </ul>
+                    </div>
+                    <div class="weekday-item">
+                        <h6 class="weekday-num"></h6>
+
+                    </div>
+                    <div class="weekday-item">
+                        <h6 class="weekday-num"></h6>
+                    </div>
                 </div>
             </div>
         </div>
@@ -97,9 +179,11 @@
             </div>
         </div>
     </nav>
-    <script src="../public../public/js/bootstrap.bundle.min.js "></script>
-    <script src="../public../public/js/jquery.min.js "></script>
-    <script src="../public../public/js/fa.min.js "></script>
+    <script src="../public/js/bootstrap.bundle.min.js "></script>
+    <script src="../public/js/jquery.min.js "></script>
+    <script src="../public/js/fa.min.js "></script>
+    <script src="../public/js/main.js "></script>
+    <script src="../public/js/calendar.js "></script>
     <script>
         $(document).ready(function() {
 

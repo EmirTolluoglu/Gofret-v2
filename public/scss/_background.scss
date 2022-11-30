@@ -30,6 +30,10 @@
     background-color: $backgorund-color-gray !important;
 }
 
-.bg-color-white{
+.bg-color-white {
     background-color: $white !important;
+}
+
+.bg-transparent-gray {
+    background-color: rgba($color: #000000, $alpha: 0.6) !important;
 }
