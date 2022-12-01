@@ -107,16 +107,16 @@
                 <img src="../public/img/platform2.png" alt="platform">
             </div>
         </div>
-        <div class="selections w-100 d-flex justify-content-around fs-16 fw-medium pb-2 mt-3" style="box-shadow: 0px 3px 3px 0px rgba(228, 253, 241, 1); color: #23C997;">
+        <div class="selections w-100 d-flex justify-content-around fs-16 fw-medium pb-2 mt-3 position-relative" style="box-shadow: 0px 3px 3px 0px rgba(228, 253, 241, 1); color: #23C997;">
 
-            <div class="selection-1">
+            <div class="selection selection-1">
                 Takas
             </div>
 
-            <div class="selection-1 text-gray">
+            <div class="selection selection-2 text-gray">
                 Takasçı
             </div>
-            <div class="slide-bar-nav"></div>
+            <!-- <div class="slide-bar position-absolute rounded-3" style="height: 4px; background-color: #23C997; width: 80px; transition: all 0.6s ease-in-out;"></div> -->
         </div>
     </main>
     <script src="../public/js/bootstrap.bundle.min.js "></script>
@@ -126,6 +126,16 @@
     <script src="../public/js/calendar.js "></script>
     <script>
         $(document).ready(function() {
+            // when onhover selection slide bar will move
+            $(".selection").hover(function() {
+                //if index 0
+                if ($(this).index() == 0) {
+                    $(".slide-bar").css("left", "12%");
+                } else if ($(this).index() == 1) {
+                    $(".slide-bar").css("left", "70%");
+                }
+            });
+
 
             const main = $('#explore');
 

@@ -146,6 +146,10 @@
     background-color: $light-tertiary-color !important;
 }
 
+.text-other-tertiary-color {
+    color: $other-tertiary-color !important;
+}
+
 .text-border-other-tertiary-color {
     border: 3px solid $other-tertiary-color !important;
 }
@@ -164,4 +168,8 @@
 
 .text-light-green-secondary-color {
     color: $light-green-secondary-color !important;
+}
+
+.text-other-secondayu-color {
+    color: $other-secondary-color !important;
 }
