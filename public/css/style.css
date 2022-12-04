@@ -195,6 +195,10 @@
   background-color: #B9FFEA !important;
 }
 
+.bg-other-secondary-color {
+  background-color: #29D3A0 !important;
+}
+
 .bg-light-tertiary, .accordion#ogret #main-btn {
   background-color: #FFC1F2 !important;
 }
@@ -246,6 +250,22 @@ h6 {
   margin: 0;
 }
 
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+}
+
+.no-outline:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+  border: 0;
+}
+
 .btn-light-secondary, .accordion#ogren #main-btn, #explore.ogren .btn-ogren {
   background-color: #B9FFEA;
   color: #29D3A0;
@@ -273,6 +293,9 @@ h6 {
   .btn-dark-pink {
     font-size: 18px;
   }
+}
+.btn-dark-pink.disabled {
+  background-color: #7D7D7D !important;
 }
 
 .btn-primary-transparent, #explore.ogret .btn-ogren, #explore.ogren .btn-ogret {
