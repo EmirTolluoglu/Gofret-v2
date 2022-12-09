@@ -1,12 +1,19 @@
 const mongoose = require('mongoose');
-const { find } = require('./models/Post');
-const Post = require('./models/Post');
+
+const Post = require('./Post');
 
 mongoose.connect('mongodb://127.0.0.1/haydarpasa_db', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('Connected to MongoDB...'))
     .catch(err => console.error('Could not connect to MongoDB...'));
 
 
+Post.create({
+    title:'selam',
+    content:'1123234'
+},(error,post)=>{
+    console.log(error,post)
+}
+)
 
 // Post.find({ }, (error, post) => {
 //     console.log(error, post);
